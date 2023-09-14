@@ -1,0 +1,114 @@
+<!-- This is the HTML template for the river graph page. -->
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>River Charts</title>
+    <!-- Include Plotly.js library -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <script src="/static/js/script.js"></script>
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/static/assets/favicon/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/assets/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="mask-icon"
+      href="/static/assets/favicon/safari-pinned-tab.svg"
+      color="#ADD8E6"
+    />
+    <meta name="msapplication-TileColor" content="#ADD8E6" />
+    <meta name="theme-color" content="#ADD8E6" />
+  </head>
+  <body>
+
+     <!-- Header -->
+    <header style="display: none">
+      <img
+        src="{% static 'assets/logo.png' %}"
+        style="display: none"
+        alt="Logo"
+        class="logo-image"
+      />
+      <h1 style="display: none">
+        RIVER<span class="title-highlight">CHARTS</span>
+      </h1>
+      <h2 id="station-name" style="display: none">Station:</h2>
+      <p id="timestamp" style="display: none"></p>
+    </header>
+
+    <!-- This div will display the loading indicator and then get replaced by the graph -->
+    <div id="loading-indicator">
+      <div class="loading-image"></div>
+      <div class="loading-text">
+        Loading. Please Wait<span class="loading-dots"></span>
+      </div>
+      <div class="wave"></div>
+    </div>
+
+    <!-- This div will get replaced by the graph -->
+    <div id="graph-div" style="display: none"></div>
+
+    <!-- Footer -->
+    <footer id="footer" style="display: none">
+      <a href="https://github.com/scottgriv/River-Charts" target="_blank">
+        <img
+          src="{% static 'assets/github-icon.png' %}"
+          alt="GitHub Icon"
+          style="vertical-align: middle; margin-right: 5px"
+        />
+        <p style="text-decoration: underline">GitHub Repository</p>
+      </a>
+      <span> | </span>
+      <a href="https://waterservices.usgs.gov" target="_blank">
+        <img
+          src="{% static 'assets/usgs-icon.png' %}"
+          alt="USGS Icon"
+          style="vertical-align: middle; margin-right: 5px"
+        />
+        <p style="text-decoration: underline">
+          Data Collected from USGS Water Services
+        </p>
+      </a>
+      <span> | </span>
+      <!-- This is the link to the NWS page for the station (change it to your station if necessary). -->      
+      <a
+        href="https://water.weather.gov/ahps2/hydrograph.php?gage=mhpp1&wfo=bgm"
+      >
+        <img
+          src="{% static 'assets/nws-icon.png' %}"
+          alt="NWS Icon"
+          style="vertical-align: middle; margin-right: 5px"
+        />
+        <p style="text-decoration: underline">River Level Forecasts from NWS</p>
+      </a>
+      <br />
+      <p class="copyright">
+        Copyright © 2023 Scott Grivner. All Rights Reserved.
+      </p>
+    </footer>
+  </body>
+</html>

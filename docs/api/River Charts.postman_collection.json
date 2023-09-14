@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "e54ac87d-150b-4f6f-bf41-972dd88477f6",
+		"name": "River Charts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24571367"
+	},
+	"item": [
+		{
+			"name": "Historial River Levels",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://waterservices.usgs.gov/nwis/iv?format=json&sites=01533400&startDT=2015-07-01&endDT=2023-08-16&parameterCd=00065&siteStatus=active&siteType=ST",
+					"protocol": "https",
+					"host": [
+						"waterservices",
+						"usgs",
+						"gov"
+					],
+					"path": [
+						"nwis",
+						"iv"
+					],
+					"query": [
+						{
+							"key": "format",
+							"value": "json"
+						},
+						{
+							"key": "sites",
+							"value": "01533400"
+						},
+						{
+							"key": "startDT",
+							"value": "2015-07-01"
+						},
+						{
+							"key": "endDT",
+							"value": "2023-08-16"
+						},
+						{
+							"key": "parameterCd",
+							"value": "00065"
+						},
+						{
+							"key": "siteStatus",
+							"value": "active"
+						},
+						{
+							"key": "siteType",
+							"value": "ST"
+						},
+						{
+							"key": "apiKey",
+							"value": "eT2Akgj5wDa4gBdMEdkbYSs0f6khDQ_Icj5nuJ7cKxyuJJtAyzUUgQBCRm9ncNFp",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Weather Forecast",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.weather.gov/alerts/active?area=PA",
+					"protocol": "https",
+					"host": [
+						"api",
+						"weather",
+						"gov"
+					],
+					"path": [
+						"alerts",
+						"active"
+					],
+					"query": [
+						{
+							"key": "area",
+							"value": "PA"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
