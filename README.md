@@ -14,8 +14,8 @@
 - The line graph is driven by data pulled using an `API` from the [United States Geological Survey (USGS)](https://www.usgs.gov/).
 
 <div style="display: flex; justify-content: center;">
-  <img src="./docs/images/demo_1.gif" alt="Demo_1" style="width: 50%; margin: 5px;">
-  <img src="./docs/images/demo_2.png" alt="Demo_2" style="width: 50%; margin: 5px;">
+  <img src="./docs/images/demo_1.gif" alt="Demo_1" style="width: 40%; margin: 5px;">
+  <img src="./docs/images/demo_2.png" alt="Demo_2" style="width: 40%; margin: 5px;">
 </div>
 
 # Background
@@ -23,14 +23,13 @@ Every year, my friends and I float down the **Susquehanna River** in **NEPA** on
 <span style="color:green"><b>Green</b></span> plots on the graph represent the dates we did float, and 
 <span style="color:red"><b>Red</b></span> plots represent the dates we did not float.
 
-  <div style="text-align:center; font-style:italic;">
-    <a href="https://pawilds.com/journey/west-branch-susquehanna)">
-        <img src="./docs/images/susquehanna_river.jpeg" alt="Susquehanna_River" style="width: 75%; margin: 5px;">
+<div align="center">
+    <a href="https://pawilds.com/journey/west-branch-susquehanna" target="_blank">
+        <img src="./docs/images/susquehanna_river.jpeg" style="width: 50%;"/>
     </a>
     <br>
     <span style="color:gray; font-style:italic;">West Branch, Susquehanna River</span>
-  </div>
-
+</div>
 
 ## API Output Example
 The application sources data using an `API` that returns `JSON` output. Here's an example of what the API response looks like:
