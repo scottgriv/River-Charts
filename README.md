@@ -13,9 +13,9 @@
 - River Charts is a `python`, `django`, `plotly`, and `pandas` web application that visualizes river data.
 - The line graph is driven by data pulled using an `API` from the [United States Geological Survey (USGS)](https://www.usgs.gov/).
 
-<div style="display: flex; justify-content: center;">
-  <img src="./docs/images/demo_1.gif" alt="Demo_1" style="width: 40%; margin: 5px;">
-  <img src="./docs/images/demo_2.png" alt="Demo_2" style="width: 40%; margin: 5px;">
+<div align="center">
+  <img src="./docs/images/demo_1.gif" alt="Demo_1" style="width: 42%; margin: 5px;">
+  <img src="./docs/images/demo_2.png" alt="Demo_2" style="width: 42%; margin: 5px;">
 </div>
 
 # Background
