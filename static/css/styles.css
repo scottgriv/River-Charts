@@ -141,7 +141,7 @@ p {
 
 .loading-image {
   z-index: 3;
-  background: url("/static/assets/loading-tube.png") no-repeat center center;
+  background: url("/static/assets/loading_tube.png") no-repeat center center;
   width: 400px;
   height: 400px;
   animation: rotateBackAndForth 1s infinite;
