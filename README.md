@@ -14,8 +14,8 @@
 - The line graph is driven by data pulled using an `API` from the [United States Geological Survey (USGS)](https://www.usgs.gov/).
 
 <div align="center">
-  <img src="./docs/images/demo_1.gif" alt="Demo_1" style="width: 42%; margin: 5px;">
-  <img src="./docs/images/demo_2.png" alt="Demo_2" style="width: 42%; margin: 5px;">
+  <img src="./docs/images/demo_1.gif" alt="Demo_1" style="width: 75%; margin: 5px;">
+  <img src="./docs/images/demo_2.png" alt="Demo_2" style="width: 75%; margin: 5px;">
 </div>
 
 # Background
@@ -25,7 +25,7 @@ Every year, my friends and I float down the **Susquehanna River** in **NEPA** on
 
 <div align="center">
     <a href="https://pawilds.com/journey/west-branch-susquehanna" target="_blank">
-        <img src="./docs/images/susquehanna_river.jpeg" style="width: 50%;"/>
+        <img src="./docs/images/susquehanna_river.jpeg" style="width: 75%;"/>
     </a>
     <br>
     <span style="color:gray; font-style:italic;">West Branch, Susquehanna River</span>
