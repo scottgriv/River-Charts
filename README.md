@@ -99,6 +99,15 @@ To call the `API` and retrieve the data:
 - The `API` is rate limited to 30 calls per minute. If you exceed this limit, you will receive a `429` error.
 - Errors are handled in the application by redirecting the user to an error page.
 
+## Dependencies
+This project makes use of several libraries and frameworks:
+- **Python:** For the application logic.
+- **Django:** For web application functionality.
+- **Plotly:** For creating interactive visualizations.
+- **Pandas:** For data manipulation and analysis.
+- **Requests:** For making `API` calls.
+- **Python-Decouple:** For storing sensitive information in a `.env` file.
+
 ## Local Installation and Running
 To install and run the project locally, follow the steps below:
 
@@ -106,6 +115,7 @@ To install and run the project locally, follow the steps below:
    ```bash
    git clone https://github.com/scottgriv/River-Charts
    ```
+    - [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
 2. Navigate to the project directory:
    ```bash
@@ -128,26 +138,25 @@ To install and run the project locally, follow the steps below:
    ```bash
    pip install django pandas plotly requests python-decouple
    ```
+    - [Installing Packages](https://packaging.python.org/tutorials/installing-packages/)
 
 6. Run the Django server:
    ```bash
    python manage.py runserver
    ```
-
-7. Edit `config.py` to add your own USGS `API` (and other) information.
-    - [USGS API](https://waterservices.usgs.gov/rest/IV-Service.html)
-    - [USGS API Documentation](https://help.waterdata.usgs.gov/faq/automated-retrievals)
-
-8. Toggle `USE_DUMMY_DATA` to `True` in `config.py` to use dummy data instead of the `API`.
-    - This is useful for testing the application without making `API` calls.
+    - [Running the Django server](https://docs.djangoproject.com/en/3.2/intro/tutorial01/#the-development-server)
 
 Now, you can visit `http://127.0.0.1:8000/` in your browser to access the application.
 
-## Dependencies
-This project makes use of several libraries and frameworks:
-- **Django:** For web application functionality.
-- **Plotly:** For creating interactive visualizations.
-- **Pandas:** For data manipulation and analysis.
+# Configuration
+- Edit `config.py` to add your own USGS `API` (and other) information.
+    - [USGS API](https://waterservices.usgs.gov/rest/IV-Service.html)
+    - [USGS API Documentation](https://help.waterdata.usgs.gov/faq/automated-retrievals)
+- Toggle `USE_DUMMY_DATA` to `True` in `config.py` to use dummy data instead of the `API`.
+    - This is useful for testing the application without making `API` calls.
+- The float data plots are driven from a `.csv` file located in `static/data/river_charts.csv`.
+    - This file can be edited to add/remove float dates.
+    - The file is read in `views.py` and passed to the template as a `context` variable.
 
 ## Disclaimer
 The data provided by this application is sourced from the [USGS](https://www.usgs.gov/). It's subject to revision, and for more information, please refer to their [official disclaimer](http://waterdata.usgs.gov/nwis/help/?provisional).
