@@ -83,7 +83,6 @@ To call the `API` and retrieve the data:
         "siteType": "ST", # ST = A body of running water moving under gravity flow in a defined channel. The channel may be entirely natural, or altered by engineering practices through straightening, dredging, and (or) lining. An entirely artificial channel should be qualified with the "canal" or "ditch" secondary site type.
     }
     ```
-    - [Codes and Parameters](https://help.waterdata.usgs.gov/codes-and-parameters)
     - [USGS Site Web Service](https://waterservices.usgs.gov/rest/Site-Service.html)
         - [Format](https://waterservices.usgs.gov/rest/Site-Service.html#format)
         - [Sites](https://waterservices.usgs.gov/rest/Site-Service.html#sites)
@@ -93,6 +92,8 @@ To call the `API` and retrieve the data:
         - [Site Status](https://waterservices.usgs.gov/rest/Site-Service.html#siteStatus)
         - [Site Type](https://waterservices.usgs.gov/rest/Site-Service.html#siteType)
             - [List of valid Site Types](http://help.waterdata.usgs.gov/site_tp_cd)
+    - [Codes and Parameters](https://help.waterdata.usgs.gov/codes-and-parameters)
+
 3. Process the JSON response as demonstrated in the example above.
 
 **Notes:** 
