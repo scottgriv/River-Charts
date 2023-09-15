@@ -14,13 +14,13 @@
 - The line graph is driven by data pulled using an `API` from the [United States Geological Survey (USGS)](https://www.usgs.gov/).
 
 <div style="display: flex; justify-content: center;">
-  <img src="./docs/images/demo_1.gif" alt="Demo_1" style="width: 32%; margin: 5px;">
+  <img src="./docs/images/demo_1.gif" alt="Demo_1" style="width: 40%; margin: 5px;">
   <a href="https://pawilds.com/journey/west-branch-susquehanna)">
     <img src="./docs/images/susquehanna_river.jpeg" alt="Susquehanna_River" style="width: 32%; margin: 5px;">
   </a>
-  <img src="./docs/images/demo_2.png" alt="Demo_2" style="width: 32%; margin: 5px;">
+  <img src="./docs/images/demo_2.png" alt="Demo_2" style="width: 40%; margin: 5px;">
 </div>
-<div style="text-align:center;">
+<div style="text-align:center; font-style:italic;">
   <span style="color:gray; font-style:italic;">West Branch, Susquehanna River</span>
 </div>
 
