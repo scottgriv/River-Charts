@@ -19,7 +19,7 @@
 </div>
 
 # Background
-Every year, my friends and I float down the **Susquehanna River** in **NEPA** on river tubes. I wanted to create a web application that would allow us to visualize past river data, allowing us to see the river height on the days we floated. Some float dates, we still got together, but we didn't float due to the dangerous river levels. 
+Every year, my friends and I float 2 miles down the **Susquehanna River** in **NEPA** on river tubes (a 2 hour float). I wanted to create a web application that would allow us to visualize past river data in order to see the river height on the days we floated down the river. Some float dates, we still got together, but we didn't float due to the dangerous river levels. 
 <span style="color:green"><b>Green</b></span> plots on the graph represent the dates we did float, and 
 <span style="color:red"><b>Red</b></span> plots represent the dates we did not float.
 
@@ -87,9 +87,9 @@ To call the `API` and retrieve the data:
     - [USGS Site Web Service](https://waterservices.usgs.gov/rest/Site-Service.html)
         - [Format](https://waterservices.usgs.gov/rest/Site-Service.html#format)
         - [Sites](https://waterservices.usgs.gov/rest/Site-Service.html#sites)
-            -[Site Example](https://waterdata.usgs.gov/monitoring-location/01533400/#parameterCode=00065&period=P7D&showMedian=true)
+            - [Site Example](https://waterdata.usgs.gov/monitoring-location/01533400/#parameterCode=00065&period=P7D&showMedian=true)
         - [Parameter Codes](https://waterservices.usgs.gov/rest/Site-Service.html#parameterCd)
-            -[List of Parameter Codes](https://help.waterdata.usgs.gov/parameter_cd?group_cd=PHY)
+            - [List of Parameter Codes](https://help.waterdata.usgs.gov/parameter_cd?group_cd=PHY)
         - [Site Status](https://waterservices.usgs.gov/rest/Site-Service.html#siteStatus)
         - [Site Type](https://waterservices.usgs.gov/rest/Site-Service.html#siteType)
             - [List of valid Site Types](http://help.waterdata.usgs.gov/site_tp_cd)
