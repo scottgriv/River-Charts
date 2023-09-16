@@ -40,7 +40,7 @@ Every year, my friends and I float 2 miles down the **Susquehanna River** in **N
         <img src="./docs/images/susquehanna_river.jpg" style="width: 80%;"/>
     </a>
     <br>
-    <span>_West Branch, Susquehanna River._</span>
+    <i>_West Branch, Susquehanna River.</i>
 </div>
 
 ## Gage Height
@@ -53,7 +53,7 @@ Every year, my friends and I float 2 miles down the **Susquehanna River** in **N
         <img src="./docs/images/gage_height_2.jpg" style="width: 80%;"/>
     </a>
     <br>
-    <span>_River Charts uses gage height data to plot the river height in feet on a given date._</span>
+    <i>The application uses gage height data to plot the river height in feet on a given date.</i>
 </span>
 </div>
 
