@@ -57,10 +57,6 @@ Every year, my friends and I float 2 miles down the **Susquehanna River** in **N
 </span>
 </div>
 
-*```diff
-# text in gray
-```*
-
 ```diff
 # text in gray
 ```
