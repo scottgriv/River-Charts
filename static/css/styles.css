@@ -194,6 +194,7 @@ header {
   color: var(--tube-black-color);
   height: 90px;
   position: relative;
+  padding-left: 85px;
 }
 
 .logo-image {

@@ -20,7 +20,7 @@ function renderGraph() {
         $("#loading-indicator").hide();
         $("#graph-div").html(data.graph_div).show();
         $("#station-name")
-          .text("Station: " + data.station_name)
+          .text(data.station_name)
           .show();
         $("#timestamp")
           .text("Last Updated: " + getCurrentTimestamp())

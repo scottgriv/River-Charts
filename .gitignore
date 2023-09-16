@@ -36,6 +36,7 @@ venv/
 !.vscode/launch.json
 !.vscode/extensions.json
 .history/*
+*.code-workspace
 
 # Miscellaneous
 /.angular/cache
@@ -47,6 +48,7 @@ testem.log
 /typings
 
 # System files
-.DS_Store
+.DS_Store?
+*.DS_Store
 Thumbs.db
 Icon?

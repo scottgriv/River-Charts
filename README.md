@@ -1,8 +1,8 @@
 ![App Logo](./docs/images/banner_large.png)
 
-[![Python](https://img.shields.io/badge/Python-3.11.0-blue?style=for-the-badge&logo=python)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/Python-3.10.13-blue?style=for-the-badge&logo=python)](https://www.python.org/)
 [![Django](https://img.shields.io/badge/Django-4.2.5-blue?style=for-the-badge&logo=django)](https://www.djangoproject.com/)
-[![Plotly](https://img.shields.io/badge/Plotly-5.16.1-blue?style=for-the-badge&logo=plotly)](https://plotly.com/)
+[![Plotly](https://img.shields.io/badge/Plotly-5.17.0-blue?style=for-the-badge&logo=plotly)](https://plotly.com/)
 [![Pandas](https://img.shields.io/badge/Pandas-2.1.0-blue?style=for-the-badge&logo=pandas)](https://pandas.pydata.org/)
 [![Email](https://img.shields.io/badge/email-contact_me-9cf?style=for-the-badge&logo=gmail)](mailto:scott.grivner@gmail.com)
 [![BuyMeACoffee](https://img.shields.io/badge/donate-buy_me_a_coffee-yellow?style=for-the-badge&logo=buymeacoffee&color=ffdd00)](https://www.buymeacoffee.com/scottgriv)
@@ -135,11 +135,17 @@ To install and run the project locally, follow the steps below:
    ```
     - [Activating a virtual environment](https://docs.python.org/3/tutorial/venv.html#creating-virtual-environments)
 
-5. Install the required packages:
+5. Install the required packages using `requirements.txt`:
    ```bash
-   pip install django pandas plotly requests python-decouple
+   pip install -r requirements.txt
    ```
     - [Installing Packages](https://packaging.python.org/tutorials/installing-packages/)
+
+    Note: If you wany to generate a new `requirements.txt` file, run the following command:
+    ```bash
+    pip freeze > requirements.txt
+    ```
+    - [Requirements Files](https://pip.pypa.io/en/stable/user_guide/#requirements-files)
 
 6. Run the Django server:
    ```bash
