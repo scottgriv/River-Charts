@@ -141,7 +141,7 @@ To install and run the project locally, follow the steps below:
    ```
     - [Installing Packages](https://packaging.python.org/tutorials/installing-packages/)
 
-    **Optional Note:** If you wany to generate a new `requirements.txt` file, run the following command:
+    **Note:** If you wany to generate a new `requirements.txt` file, run the following command:
     ```bash
     pip freeze > requirements.txt
     ```
