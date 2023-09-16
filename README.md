@@ -40,7 +40,7 @@ Every year, my friends and I float 2 miles down the **Susquehanna River** in **N
         <img src="./docs/images/susquehanna_river.jpg" style="width: 80%;"/>
     </a>
     <br>
-    <span style="color:gray; font-style:italic;">West Branch, Susquehanna River</span>
+    <span>_West Branch, Susquehanna River._</span>
 </div>
 
 ## Gage Height
@@ -53,14 +53,9 @@ Every year, my friends and I float 2 miles down the **Susquehanna River** in **N
         <img src="./docs/images/gage_height_2.jpg" style="width: 80%;"/>
     </a>
     <br>
-    <span style="color:gray; font-style:italic;">The application uses gage height data to plot the river height in feet on a given date. 
+    <span>_River Charts uses gage height data to plot the river height in feet on a given date._</span>
 </span>
 </div>
-
-```diff
-# text in gray
-```
-
 
 ## API Output Example
 The application sources data using an `API` that returns `JSON` output. Here's an example of what the API response looks like:
