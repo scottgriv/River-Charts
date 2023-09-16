@@ -17,7 +17,7 @@
     </a>
     <br>
     <a href="mailto:scott.grivner@gmail.com">
-        <img src="https://img.shields.io/badge/email-contact_me-9cf?style=for-the-badge&logo=gmail" alt="Email Badge" />
+        <img src="https://img.shields.io/badge/email-contact_me-red?style=for-the-badge&logo=gmail" alt="Email Badge" />
     </a>
     <a href="https://www.buymeacoffee.com/scottgriv">
         <img src="https://img.shields.io/badge/donate-buy_me_a_coffee-yellow?style=for-the-badge&logo=buymeacoffee&color=ffdd00" alt="BuyMeACoffee Badge" />
