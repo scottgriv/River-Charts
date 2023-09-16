@@ -18,6 +18,18 @@
   <img src="./docs/images/demo_2.png" alt="Demo_2" style="width: 80%; margin: 5px;">
 </div>
 
+# Table of Contents
+- [Background](#background)
+- [Gage Height](#gage-height)
+- [API Output Example](#api-output-example)
+- [Calling the API](#calling-the-api)
+- [Dependencies](#dependencies)
+- [Local Installation and Running](#local-installation-and-running)
+- [Configuration](#configuration)
+- [Disclaimer](#disclaimer)
+- [License](#license)
+- [Credit](#credit)
+
 # Background
 Every year, my friends and I float 2 miles down the **Susquehanna River** in **NEPA** on river tubes (a 2 hour float). I wanted to create a web application that would allow us to visualize past river data in order to see the river height on the days we floated down the river. Some float dates, we still got together, but we didn't float due to the dangerous river levels. 
 <span style="color:green"><b>Green</b></span> plots on the graph represent the dates we did float, and 
@@ -25,10 +37,24 @@ Every year, my friends and I float 2 miles down the **Susquehanna River** in **N
 
 <div align="center">
     <a href="https://pawilds.com/journey/west-branch-susquehanna" target="_blank">
-        <img src="./docs/images/susquehanna_river.jpeg" style="width: 80%;"/>
+        <img src="./docs/images/susquehanna_river.jpg" style="width: 80%;"/>
     </a>
     <br>
     <span style="color:gray; font-style:italic;">West Branch, Susquehanna River</span>
+</div>
+
+## Gage Height
+<div align="center">
+    <a href="https://waterdata.usgs.gov/blog/gage_height/" target="_blank">
+        <img src="./docs/images/gage_height_2.jpg" style="width: 80%;"/>
+    </a>
+    <br>
+    <a href="https://www.usgs.gov/media/images/usgs-stage-discharge-relation-example" target="_blank">
+        <img src="./docs/images/gage_height.jpg" style="width: 80%;"/>
+    </a>
+    <br>
+    <span style="color:gray; font-style:italic;">The application uses gage height data to plot the river height in feet on a given date. 
+</span>
 </div>
 
 ## API Output Example

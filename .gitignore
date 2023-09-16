@@ -52,3 +52,7 @@ testem.log
 *.DS_Store
 Thumbs.db
 Icon?
+
+# Sketch and Design files
+*.sketch
+**/designs/
