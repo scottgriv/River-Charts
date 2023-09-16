@@ -46,11 +46,11 @@ Every year, my friends and I float 2 miles down the **Susquehanna River** in **N
 ## Gage Height
 <div align="center">
     <a href="https://waterdata.usgs.gov/blog/gage_height/" target="_blank">
-        <img src="./docs/images/gage_height_2.jpg" style="width: 80%;"/>
+        <img src="./docs/images/gage_height_1.jpg" style="width: 80%;"/>
     </a>
     <br>
     <a href="https://www.usgs.gov/media/images/usgs-stage-discharge-relation-example" target="_blank">
-        <img src="./docs/images/gage_height.jpg" style="width: 80%;"/>
+        <img src="./docs/images/gage_height_2.jpg" style="width: 80%;"/>
     </a>
     <br>
     <span style="color:gray; font-style:italic;">The application uses gage height data to plot the river height in feet on a given date. 
@@ -58,7 +58,14 @@ Every year, my friends and I float 2 miles down the **Susquehanna River** in **N
 </div>
 <p align="center">
     <span style="color:blue">This is blue text.</span>
+    ```diff
+    # text in gray
+    ```
 </p>
+
+    ```diff
+    # text in gray
+    ```
 
 
 ## API Output Example
