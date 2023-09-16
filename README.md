@@ -56,16 +56,14 @@ Every year, my friends and I float 2 miles down the **Susquehanna River** in **N
     <span style="color:gray; font-style:italic;">The application uses gage height data to plot the river height in feet on a given date. 
 </span>
 </div>
-<p align="center">
-    <span style="color:blue">This is blue text.</span>
-    ```diff
-    # text in gray
-    ```
-</p>
 
-    ```diff
-    # text in gray
-    ```
+*```diff
+# text in gray
+```*
+
+```diff
+# text in gray
+```
 
 
 ## API Output Example
