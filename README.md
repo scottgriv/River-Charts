@@ -4,16 +4,16 @@
 
 <p align="center">
     <a href="https://www.python.org/">
-        <img src="https://img.shields.io/badge/Python-3.10.13-blue?style=for-the-badge&logo=python" alt="Python Badge" />
+        <img src="https://img.shields.io/badge/Python-3.10.13-244C6F?style=for-the-badge&logo=python" alt="Python Badge" />
     </a>
     <a href="https://www.djangoproject.com/">
-        <img src="https://img.shields.io/badge/Django-4.2.5-blue?style=for-the-badge&logo=django" alt="Django Badge" />
+        <img src="https://img.shields.io/badge/Django-4.2.5-0B4B33?style=for-the-badge&logo=django" alt="Django Badge" />
     </a>
     <a href="https://plotly.com/">
-        <img src="https://img.shields.io/badge/Plotly-5.17.0-blue?style=for-the-badge&logo=plotly" alt="Plotly Badge" />
+        <img src="https://img.shields.io/badge/Plotly-5.17.0-7976FF?style=for-the-badge&logo=plotly" alt="Plotly Badge" />
     </a>
     <a href="https://pandas.pydata.org/">
-        <img src="https://img.shields.io/badge/Pandas-2.1.0-blue?style=for-the-badge&logo=pandas" alt="Pandas Badge" />
+        <img src="https://img.shields.io/badge/Pandas-2.1.0-130753?style=for-the-badge&logo=pandas" alt="Pandas Badge" />
     </a>
     <br>
     <a href="mailto:scott.grivner@gmail.com">
