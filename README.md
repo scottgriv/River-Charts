@@ -15,6 +15,7 @@
     <a href="https://pandas.pydata.org/">
         <img src="https://img.shields.io/badge/Pandas-2.1.0-blue?style=for-the-badge&logo=pandas" alt="Pandas Badge" />
     </a>
+    <br>
     <a href="mailto:scott.grivner@gmail.com">
         <img src="https://img.shields.io/badge/email-contact_me-9cf?style=for-the-badge&logo=gmail" alt="Email Badge" />
     </a>
