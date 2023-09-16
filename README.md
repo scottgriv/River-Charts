@@ -1,11 +1,27 @@
+<!-- Begin README -->
+
 ![App Logo](./docs/images/banner_large.png)
 
-[![Python](https://img.shields.io/badge/Python-3.10.13-blue?style=for-the-badge&logo=python)](https://www.python.org/)
-[![Django](https://img.shields.io/badge/Django-4.2.5-blue?style=for-the-badge&logo=django)](https://www.djangoproject.com/)
-[![Plotly](https://img.shields.io/badge/Plotly-5.17.0-blue?style=for-the-badge&logo=plotly)](https://plotly.com/)
-[![Pandas](https://img.shields.io/badge/Pandas-2.1.0-blue?style=for-the-badge&logo=pandas)](https://pandas.pydata.org/)
-[![Email](https://img.shields.io/badge/email-contact_me-9cf?style=for-the-badge&logo=gmail)](mailto:scott.grivner@gmail.com)
-[![BuyMeACoffee](https://img.shields.io/badge/donate-buy_me_a_coffee-yellow?style=for-the-badge&logo=buymeacoffee&color=ffdd00)](https://www.buymeacoffee.com/scottgriv)
+<p align="center">
+    <a href="https://www.python.org/">
+        <img src="https://img.shields.io/badge/Python-3.10.13-blue?style=for-the-badge&logo=python" alt="Python Badge" />
+    </a>
+    <a href="https://www.djangoproject.com/">
+        <img src="https://img.shields.io/badge/Django-4.2.5-blue?style=for-the-badge&logo=django" alt="Django Badge" />
+    </a>
+    <a href="https://plotly.com/">
+        <img src="https://img.shields.io/badge/Plotly-5.17.0-blue?style=for-the-badge&logo=plotly" alt="Plotly Badge" />
+    </a>
+    <a href="https://pandas.pydata.org/">
+        <img src="https://img.shields.io/badge/Pandas-2.1.0-blue?style=for-the-badge&logo=pandas" alt="Pandas Badge" />
+    </a>
+    <a href="mailto:scott.grivner@gmail.com">
+        <img src="https://img.shields.io/badge/email-contact_me-9cf?style=for-the-badge&logo=gmail" alt="Email Badge" />
+    </a>
+    <a href="https://www.buymeacoffee.com/scottgriv">
+        <img src="https://img.shields.io/badge/donate-buy_me_a_coffee-yellow?style=for-the-badge&logo=buymeacoffee&color=ffdd00" alt="BuyMeACoffee Badge" />
+    </a>
+</p>
 
 -------
 
@@ -208,3 +224,5 @@ The data provided by this application is sourced from the [USGS](https://www.usg
         <img src="./docs/images/app_icon.png" width="100" height="100"/>
     </a>
 </div>
+
+<!-- End README -->
