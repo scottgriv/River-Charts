@@ -40,7 +40,7 @@ Every year, my friends and I float 2 miles down the **Susquehanna River** in **N
         <img src="./docs/images/susquehanna_river.jpg" style="width: 80%;"/>
     </a>
     <br>
-    <i>_West Branch, Susquehanna River.</i>
+    <i>West Branch, Susquehanna River.</i>
 </div>
 
 ## Gage Height
