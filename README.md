@@ -56,6 +56,10 @@ Every year, my friends and I float 2 miles down the **Susquehanna River** in **N
     <span style="color:gray; font-style:italic;">The application uses gage height data to plot the river height in feet on a given date. 
 </span>
 </div>
+<p align="center">
+    <span style="color:blue">This is blue text.</span>
+</p>
+
 
 ## API Output Example
 The application sources data using an `API` that returns `JSON` output. Here's an example of what the API response looks like:
