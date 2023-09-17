@@ -1,6 +1,6 @@
 <!-- Begin README -->
 
-![App Logo](./docs/images/banner_large.png)
+[![App Logo](./docs/images/banner_large.png)](http://scottgriv.pythonanywhere.com/)
 
 <p align="center">
     <a href="https://www.python.org/">
@@ -29,6 +29,7 @@
 # River Charts
 - River Charts is a `Python`, `Django`, `Plotly`, and `Pandas` web application that visualizes river data.
 - The line graph is driven by data pulled using an `API` from the [United States Geological Survey (USGS)](https://www.usgs.gov/).
+- Visit the application [here](http://scottgriv.pythonanywhere.com/).
 
 <div align="center">
   <img src="./docs/images/demo_1.gif" alt="Demo_1" style="width: 80%; margin: 5px;">
