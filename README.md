@@ -27,8 +27,11 @@
 -------
 
 # River Charts
-- River Charts is a `Python`, `Django`, `Plotly`, and `Pandas` web application that visualizes river data.
+- River Charts is a `Python`, `Django`, `Plotly`, and `Pandas` web application that visualizes river data for a specific river/site/location.
 - The line graph is driven by data pulled using an `API` from the [United States Geological Survey (USGS)](https://www.usgs.gov/).
+- The data is updated with the most recent river height data every time the application is loaded.
+- The data is captured by the USGS using a [gage height](#gage-height) sensor every 15 minutes.
+- I recommend using the application on a desktop since the chart is interactive has a wider view, but it can be used on a mobile device as well.
 - Visit the application [here](http://scottgriv.pythonanywhere.com/).
 
 <div align="center">
@@ -52,8 +55,8 @@
 
 # Background
 Every year, my friends and I float 2 miles down the **Susquehanna River** in **NEPA** on river tubes (a 2 hour float). I wanted to create a web application that would allow us to visualize past river data in order to see the river height on the days we floated down the river. Some float dates, we still got together, but we didn't float due to the dangerous river levels. 
-<span style="color:green"><b>Green</b></span> plots on the graph represent the dates we did float, and 
-<span style="color:red"><b>Red</b></span> plots represent the dates we did not float.
+<span style="color:green"><b>Green</b></span> plots on the graph represent the dates we did float (with a "Floated" status of "Yes"), and 
+<span style="color:red"><b>Red</b></span> plots represent the dates we did not float (with a "Floated" status of "No").
 
 <div align="center">
     <a href="https://pawilds.com/journey/west-branch-susquehanna" target="_blank">
@@ -224,9 +227,14 @@ To call the `API` and retrieve the data:
 3. Process the JSON response as demonstrated in the example above.
 
 **Notes:** 
-- The `API` is rate limited to 30 calls per minute. If you exceed this limit, you will receive a `429` error.
-- Errors are handled in the application by redirecting the user to an error page.
 - The application uses the `API` to source data for the graph. If the `API` is down, the graph will not render.
+- The `API` is rate limited to 30 calls per minute. If you exceed this limit, you will receive a `429` error.
+- Errors are handled in the application by redirecting the user to an error page with the appropriate error message.
+<div align="center">
+    <img src="./docs/images/error_page_example.jpg" style="width: 80%;"/>
+    <br>
+    <i>Example of an Error Page.</i>
+</div>
 
 ## API Output Example
 The application sources data using an `API` that returns `JSON` output. Here's an example of what the API response looks like:

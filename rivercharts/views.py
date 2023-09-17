@@ -177,7 +177,7 @@ def river_graph_data(request):
                     name=f"Float {float_number} - {river_level:.2f} ft",  # This line sets the name in the legend
                     text=[str(float_number)],  # This places the float number next to the point
                     hoverinfo="text",
-                    hovertext=[f"Date: {float_date.strftime('%m-%d-%Y')}<br>Float #: {float_number}<br>Height: {river_level:.2f} ft<br>Floated: {floated_status}"]
+                    hovertext=[f"Date: {float_date.strftime('%m-%d-%Y')}<br>Float #: {float_number}<br>Height: {river_level:.2f} ft<br>Floated: {'Yes' if floated_status == 'Y' else 'No'}"]
                 )
             )
 
