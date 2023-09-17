@@ -32,7 +32,7 @@
 - The data is updated with the most recent river height data every time the application is loaded.
 - The data is captured by the USGS using a [gage height](#gage-height) sensor every 15 minutes.
 - I recommend using the application on a desktop since the chart is interactive has a wider view, but it can be used on a mobile device as well.
-- Please be patient, the loading time of the application is around 30 seconds (depending on your internet connection), due to the large `API` `JSON` response and the amount of data being processed from the USGS.
+- Please be patient, the loading time of the application is around 60 seconds (depending on your internet connection), due to the large `API` `JSON` response and the amount of data being processed from the USGS.
 - Visit the application [here](http://scottgriv.pythonanywhere.com/).
 
 <div align="center">
@@ -231,7 +231,7 @@ To call the `API` and retrieve the data:
 - The application uses the `API` to source data for the graph. If the `API` is down, the graph will not render.
 - Errors are handled in the application by redirecting the user to an error page with the appropriate error message.
     - `HTTP` errors are handled in the application by redirecting the user to an error page with the appropriate error message.
-    - The application will also display an error message if the `API` returns an empty response or a timeout error (default is set to 60 seconds in `config.py`).
+    - The application will also display an error message if the `API` returns an empty response or a timeout error (default is set to 90 seconds in `config.py`).
     - The `API` is rate limited to 30 calls per minute. If you exceed this limit, you will receive a `429` error.
     
 <div align="center">

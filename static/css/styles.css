@@ -179,6 +179,17 @@ p {
   order: 2;
 }
 
+.loading-text-timing {
+  font-family: var(--main-font-family);
+  color: var(--tube-orange-color);
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+  z-index: 3;
+  order: 3;
+}
+
 .loading-dots::after {
   content: ".";
   display: inline-block;
