@@ -38,11 +38,13 @@
 # Table of Contents
 - [Background](#background)
 - [Gage Height](#gage-height)
-- [API Output Example](#api-output-example)
-- [Calling the API](#calling-the-api)
+- [What's Inside?](#whats-inside)
 - [Dependencies](#dependencies)
-- [Local Installation and Running](#local-installation-and-running)
+- [Getting Started](#getting-started)
 - [Configuration](#configuration)
+- [Deployment](#deployment)
+- [Calling the API](#calling-the-api)
+- [API Output Example](#api-output-example)
 - [Disclaimer](#disclaimer)
 - [License](#license)
 - [Credit](#credit)
@@ -74,74 +76,43 @@ Every year, my friends and I float 2 miles down the **Susquehanna River** in **N
 </span>
 </div>
 
-## API Output Example
-The application sources data using an `API` that returns `JSON` output. Here's an example of what the API response looks like:
+## What's Inside?
+A quick look at the important files and directories you'll see in this project:
 
-```json
-{
-    "name": "ns1:timeSeriesResponseType",
-    ...
-    "timeSeries": [
-        {
-            "sourceInfo": {
-                "siteName": "Susquehanna River at Meshoppen, PA",
-                ...
-            },
-            "variable": {
-                "variableName": "Gage height, ft",
-                ...
-            },
-            "values": [
-                {
-                    "value": [
-                        {
-                            "value": "15.13",
-                            "dateTime": "2015-07-01T00:00:00.000-04:00"
-                        },
-                        ...
-                    ]
-                }
-            ]
-        }
-    ]
-}
+```bash
+├── README.md # This file.
+├── config.py # A file that contains sensitive information (excluded from this repository).
+├── manage.py # A command-line utility that lets you interact with this Django project in various ways.
+├── requirements.txt # A list of Python packages required to run this project.
+├── River_Charts # A directory for the river_charts app.
+│   ├── __init__.py # An empty file that tells Python that this directory should be considered a Python package.
+│   ├── admin.py # A file that registers models to be displayed in the Django admin site.
+│   ├── apps.py # A file that contains the application configuration.
+│   ├── models.py # A file that contains the database models.
+│   ├── tests.py # A file that contains the tests for the application.
+│   ├── urls.py # A file that contains the URL declarations for the application.
+│   └── views.py # A file that contains the application logic.
+├── river_charts # The Django project directory.
+│   ├── __init__.py # An empty file that tells Python that this directory should be considered a Python package.
+│   ├── asgi.py # An entry-point for ASGI-compatible web servers to serve your project.
+│   ├── settings.py # Settings/configuration for this Django project.
+│   ├── urls.py # The URL declarations for this Django project.
+│   └── wsgi.py # An entry-point for WSGI-compatible web servers to serve your project.
+├── static # A directory for static files that are used in this Django project.
+│   ├── css # A directory for CSS files.
+│   │   └── styles.css # A CSS file that contains the styles for the application.
+│   ├── data # A directory for data files.
+│   │   └── river_charts.csv # A CSV file that contains the float dates for the application.
+│   └── images # A directory for image files.
+├── templates # A directory for HTML templates.
+│   └── river_charts # A directory for HTML templates specific to the river_charts app.
+│       ├── error.html # An HTML template that displays an error message.
+│       └── index.html # An HTML template that displays the application.
+├── views.py # A file that contains the application logic.
+├── VERSION # A file that contains the current version of the application.
+├── LICENSE # A file that contains the license for this project.
+└── CREDITS # A file that contains the credits for this project.
 ```
-(For the sake of brevity, the full output is abbreviated with `...`)
-
-## Calling the API
-To call the `API` and retrieve the data:
-
-1. Make a GET request to: `http://nwis.waterservices.usgs.gov/nwis/...` (based on your requirements).
-    - ex. `https://waterservices.usgs.gov/nwis/iv?format=json&sites=01533400&startDT=2015-07-01&endDT=2023-08-16&parameterCd=00065&siteStatus=active&siteType=ST`
-2. Pass the necessary parameters in the request.
-    - ex.
-    ```python
-    params = {
-        "format": "json", # Set your interchange format.
-        "sites": "01533400", # Site Code: Susquehanna River at Meshoppen, PA.
-        "startDT": "2015-07-01", # Set the date you want to start collecting data from.
-        "endDT": "2023-09-14", # This is based on the current date in the application.
-        "parameterCd": "00065", # Parameter Code: Gage height, ft.
-        "siteStatus": "active", # Selects sites based on whether or not they are currently active. Each USGS Water Science Center determines whether a site is active or inactive. The default is all (show both active and inactive sites).
-        "siteType": "ST", # ST = A body of running water moving under gravity flow in a defined channel. The channel may be entirely natural, or altered by engineering practices through straightening, dredging, and (or) lining. An entirely artificial channel should be qualified with the "canal" or "ditch" secondary site type.
-    }
-    ```
-    - [USGS Site Web Service](https://waterservices.usgs.gov/rest/Site-Service.html)
-        - [Format](https://waterservices.usgs.gov/rest/Site-Service.html#format)
-        - [Sites](https://waterservices.usgs.gov/rest/Site-Service.html#sites)
-            - [Site Example](https://waterdata.usgs.gov/monitoring-location/01533400/#parameterCode=00065&period=P7D&showMedian=true)
-        - [Parameter Codes](https://waterservices.usgs.gov/rest/Site-Service.html#parameterCd)
-            - [List of Parameter Codes](https://help.waterdata.usgs.gov/parameter_cd?group_cd=PHY)
-        - [Site Status](https://waterservices.usgs.gov/rest/Site-Service.html#siteStatus)
-        - [Site Type](https://waterservices.usgs.gov/rest/Site-Service.html#siteType)
-            - [List of valid Site Types](http://help.waterdata.usgs.gov/site_tp_cd)
-    - [Codes and Parameters](https://help.waterdata.usgs.gov/codes-and-parameters)
-
-3. Process the JSON response as demonstrated in the example above.
-
-**Notes:** 
-- The `API` is rate limited to 30 calls per minute. If you exceed this limit, you will receive a `429` error.
-- Errors are handled in the application by redirecting the user to an error page.
 
 ## Dependencies
 This project makes use of several libraries and frameworks:
@@ -151,8 +122,9 @@ This project makes use of several libraries and frameworks:
 - **Pandas:** For data manipulation and analysis.
 - **Requests:** For making `API` calls.
 - **Python-Decouple:** For storing sensitive information in a `.env` file.
+- *See [requirements.txt](requirements.txt) for a full list of dependencies.*
 
-## Local Installation and Running
+## Getting Started
 To install and run the project locally, follow the steps below:
 
 1. Clone the repository:
@@ -198,7 +170,7 @@ To install and run the project locally, follow the steps below:
 
 Now, you can visit `http://127.0.0.1:8000/` in your browser to access the application.
 
-# Configuration
+## Configuration
 - Edit `config.py` to add your own USGS `API` (and other) information.
     - [USGS API](https://waterservices.usgs.gov/rest/IV-Service.html)
     - [USGS API Documentation](https://help.waterdata.usgs.gov/faq/automated-retrievals)
@@ -207,6 +179,87 @@ Now, you can visit `http://127.0.0.1:8000/` in your browser to access the applic
 - The float data plots are driven from a `.csv` file located in `static/data/river_charts.csv`.
     - This file can be edited to add/remove float dates.
     - The file is read in `views.py` and passed to the template as a `context` variable.
+
+## Deployment
+- The application is hosted [here](http://scottgriv.pythonanywhere.com/) on [PythonAnywhere](https://www.pythonanywhere.com/).
+- The application is deployed using a `WSGI` configuration file.
+    - [WSGI Configuration](https://docs.djangoproject.com/en/3.2/howto/deployment/wsgi/)
+- First, make sure you adjust your `settings.py` file `ALLOWED_HOSTS` to include your deployment host.
+    - [Deploying Django](https://docs.djangoproject.com/en/3.2/howto/deployment/)
+- Second, make sure you adjust your `settings.py` file `DEBUG` to `False` for production.
+    - [Django Settings](https://docs.djangoproject.com/en/3.2/ref/settings/)
+- Finnaly, be sure to create a `.env` file where you host your application to store your sensitive information (excluded from this repository).
+    - [Python-Decouple](https://pypi.org/project/python-decouple/)
+
+## Calling the API
+To call the `API` and retrieve the data:
+
+1. Make a GET request to: `http://nwis.waterservices.usgs.gov/nwis/...` (based on your requirements).
+    - ex. `https://waterservices.usgs.gov/nwis/iv?format=json&sites=01533400&startDT=2015-07-01&endDT=2023-08-16&parameterCd=00065&siteStatus=active&siteType=ST`
+2. Pass the necessary parameters in the request.
+    - ex.
+    ```python
+    params = {
+        "format": "json", # Set your interchange format.
+        "sites": "01533400", # Site Code: Susquehanna River at Meshoppen, PA.
+        "startDT": "2015-07-01", # Set the date you want to start collecting data from.
+        "endDT": "2023-09-14", # This is based on the current date in the application.
+        "parameterCd": "00065", # Parameter Code: Gage height, ft.
+        "siteStatus": "active", # Selects sites based on whether or not they are currently active. Each USGS Water Science Center determines whether a site is active or inactive. The default is all (show both active and inactive sites).
+        "siteType": "ST", # ST = A body of running water moving under gravity flow in a defined channel. The channel may be entirely natural, or altered by engineering practices through straightening, dredging, and (or) lining. An entirely artificial channel should be qualified with the "canal" or "ditch" secondary site type.
+    }
+    ```
+    - [USGS Site Web Service](https://waterservices.usgs.gov/rest/Site-Service.html)
+        - [Format](https://waterservices.usgs.gov/rest/Site-Service.html#format)
+        - [Sites](https://waterservices.usgs.gov/rest/Site-Service.html#sites)
+            - [Site Example](https://waterdata.usgs.gov/monitoring-location/01533400/#parameterCode=00065&period=P7D&showMedian=true)
+        - [Parameter Codes](https://waterservices.usgs.gov/rest/Site-Service.html#parameterCd)
+            - [List of Parameter Codes](https://help.waterdata.usgs.gov/parameter_cd?group_cd=PHY)
+        - [Site Status](https://waterservices.usgs.gov/rest/Site-Service.html#siteStatus)
+        - [Site Type](https://waterservices.usgs.gov/rest/Site-Service.html#siteType)
+            - [List of valid Site Types](http://help.waterdata.usgs.gov/site_tp_cd)
+    - [Codes and Parameters](https://help.waterdata.usgs.gov/codes-and-parameters)
+
+3. Process the JSON response as demonstrated in the example above.
+
+**Notes:** 
+- The `API` is rate limited to 30 calls per minute. If you exceed this limit, you will receive a `429` error.
+- Errors are handled in the application by redirecting the user to an error page.
+- The application uses the `API` to source data for the graph. If the `API` is down, the graph will not render.
+
+## API Output Example
+The application sources data using an `API` that returns `JSON` output. Here's an example of what the API response looks like:
+
+```json
+{
+    "name": "ns1:timeSeriesResponseType",
+    ...
+    "timeSeries": [
+        {
+            "sourceInfo": {
+                "siteName": "Susquehanna River at Meshoppen, PA",
+                ...
+            },
+            "variable": {
+                "variableName": "Gage height, ft",
+                ...
+            },
+            "values": [
+                {
+                    "value": [
+                        {
+                            "value": "15.13",
+                            "dateTime": "2015-07-01T00:00:00.000-04:00"
+                        },
+                        ...
+                    ]
+                }
+            ]
+        }
+    ]
+}
+```
+(For the sake of brevity, the full output is abbreviated with `...`)
 
 ## Disclaimer
 The data provided by this application is sourced from the [USGS](https://www.usgs.gov/). It's subject to revision, and for more information, please refer to their [official disclaimer](http://waterdata.usgs.gov/nwis/help/?provisional).
