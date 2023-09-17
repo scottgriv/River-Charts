@@ -182,7 +182,7 @@ p {
 .loading-text-timing {
   font-family: var(--main-font-family);
   color: var(--tube-orange-color);
-  font-size: 24px;
+  font-size: 18px;
   text-align: center;
   margin-top: 20px;
   position: relative;
