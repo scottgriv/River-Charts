@@ -232,6 +232,7 @@ To call the `API` and retrieve the data:
     - `HTTP` errors are handled in the application by redirecting the user to an error page with the appropriate error message.
     - The application will also display an error message if the `API` returns an empty response or a timeout error (default is set to 60 seconds in `config.py`).
     - The `API` is rate limited to 30 calls per minute. If you exceed this limit, you will receive a `429` error.
+    
 <div align="center">
     <img src="./docs/images/error_page_example.jpg" style="width: 80%;"/>
     <br>
