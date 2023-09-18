@@ -44,8 +44,7 @@
     <meta name="theme-color" content="#ADD8E6" />
   </head>
   <body>
-
-     <!-- Header -->
+    <!-- Header -->
     <header style="display: none">
       <img
         src="{% static 'assets/app_icon.png' %}"
@@ -78,39 +77,30 @@
     <!-- Footer -->
     <footer id="footer" style="display: none">
       <!-- This is the link to the GitHub repository (change it to your repository if necessary). -->
-      <a href="https://github.com/scottgriv/River-Charts" target="_blank">
-        <img
-          src="{% static 'assets/github_icon.png' %}"
-          alt="GitHub Icon"
-          style="vertical-align: middle; margin-right: 5px"
-        />
-        <p style="text-decoration: underline">GitHub Repository</p>
-      </a>
-      <span> | </span>
+      <div class="link-container">
+        <a href="https://github.com/scottgriv/River-Charts" target="_blank">
+          <img src="{% static 'assets/github_icon.png' %}" alt="GitHub Icon" />
+          <span>GitHub Repository</span>
+        </a>
+      </div>
+      <span class="break-container"> | </span>
       <!-- This is the link to the USGS page. -->
-      <a href="https://waterservices.usgs.gov" target="_blank">
-        <img
-          src="{% static 'assets/usgs_icon.png' %}"
-          alt="USGS Icon"
-          style="vertical-align: middle; margin-right: 5px"
-        />
-        <p style="text-decoration: underline">
-          Data Collected from the USGS Water Services
-        </p>
-      </a>
-      <span> | </span>
-      <!-- This is the link to the NWS page for the station (change it to your station if necessary). -->      
-      <a
-        href="https://water.weather.gov/ahps2/hydrograph.php?gage=mhpp1&wfo=bgm"
-      >
-        <img
-          src="{% static 'assets/nws_icon.png' %}"
-          alt="NWS Icon"
-          style="vertical-align: middle; margin-right: 5px"
-        />
-        <p style="text-decoration: underline">River Level Forecasts from the NWS</p>
-      </a>
-      <br />
+      <div class="link-container">
+        <a href="https://waterservices.usgs.gov" target="_blank">
+          <img src="{% static 'assets/usgs_icon.png' %}" alt="USGS Icon" />
+          <span>Data Collected from the USGS Water Services</span>
+        </a>
+      </div>
+      <span class="break-container"> | </span>
+      <!-- This is the link to the NWS page for the station (change it to your station if necessary). -->
+      <div class="link-container">
+        <a
+          href="https://water.weather.gov/ahps2/hydrograph.php?gage=mhpp1&wfo=bgm"
+        >
+          <img src="{% static 'assets/nws_icon.png' %}" alt="NWS Icon" />
+          <span>River Level Forecasts from the NWS</span>
+        </a>
+      </div>
       <p class="copyright">
         Copyright © 2023 Scott Grivner. All Rights Reserved.
       </p>

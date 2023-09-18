@@ -267,8 +267,37 @@ footer img {
   margin-right: 5px;
 }
 
+.link-container, span {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
 .copyright {
+  display: block; /* Ensure the copyright is always on a new line */
+  padding: 0;
   color: var(--tube-orange-color);
+}
+
+.link-container a {
+  text-decoration: none; 
+}
+
+.link-container a span {
+  vertical-align: middle;
+  text-decoration: underline; 
+  margin-left: 5px;
+}
+
+/* Media query for smaller viewports */
+@media only screen and (max-width: 600px) { 
+  .link-container {
+      display: block;
+  }
+
+  .break-container {
+      display: none;
+  }
 }
 
 /* Error Page Styles */
