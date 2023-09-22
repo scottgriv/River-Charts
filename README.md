@@ -78,7 +78,6 @@ Every year, my friends and I float 2 miles down the **Susquehanna River** in **N
     </a>
     <br>
     <i>The application uses gage height data to plot the river height in feet on a given date.</i>
-</span>
 </div>
 
 ## What's Inside?
