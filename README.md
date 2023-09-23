@@ -59,6 +59,8 @@ Every year, my friends and I float 2 miles down the **Susquehanna River** in **N
 <span style="color:green"><b>Green</b></span> plots on the graph represent the dates we did float (with a "Floated" status of "Yes"), and 
 <span style="color:red"><b>Red</b></span> plots represent the dates we did not float (with a "Floated" status of "No").
 
+*The closest river gauge to our float location is the [Susquehanna River at Meshoppen, PA](https://waterdata.usgs.gov/nwis/uv?01533400), which is the default site code in the application. You can change the site code in the application to visualize data for a different river.*
+
 <div align="center">
     <a href="https://pawilds.com/journey/west-branch-susquehanna" target="_blank">
         <img src="./docs/images/susquehanna_river.jpg" style="width: 80%;"/>
