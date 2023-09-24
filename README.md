@@ -27,7 +27,7 @@
 -------
 
 # River Charts
-- River Charts is a `Python`, `Django`, `Plotly`, and `Pandas` web application that visualizes river data for a specific river/site/location.
+**River Charts** is a `Python`, `Django`, `Plotly`, and `Pandas` web application that visualizes river data for a specific river/site/location.
 - The line graph is driven by data pulled using an `API` from the [United States Geological Survey (USGS)](https://www.usgs.gov/).
 - The data is updated with the most recent river height data every time the application is loaded.
 - The data is captured by the USGS using a [gage height](#gage-height) sensor every 15 minutes.
@@ -50,6 +50,7 @@
 - [Deployment](#deployment)
 - [Calling the API](#calling-the-api)
 - [API Output Example](#api-output-example)
+- [Project](#project)
 - [Disclaimer](#disclaimer)
 - [License](#license)
 - [Credit](#credit)
@@ -275,8 +276,13 @@ The application sources data using an `API` that returns `JSON` output. Here's a
 ```
 (For the sake of brevity, the full output is abbreviated with `...`)
 
+## Project
+Please reference the [GitHub Project](https://github.com/users/scottgriv/projects/7) tab inside this Repo to get a good understanding of where I'm currently at with the overall project. Bugs and Enhancements will also be tracked there as well.
+
 ## Disclaimer
-The data provided by this application is sourced from the [USGS](https://www.usgs.gov/). It's subject to revision, and for more information, please refer to their [official disclaimer](http://waterdata.usgs.gov/nwis/help/?provisional).
+- The data provided by this application is sourced from the [USGS](https://www.usgs.gov/). 
+- It's subject to revision, and for more information, please refer to their [official disclaimer](http://waterdata.usgs.gov/nwis/help/?provisional).
+- Software is provided as-is and no warranty is given about its usability. 
 
 ## License
 - **River Charts** is released under the terms of the **GNU General Public License, version 3 (GPLv3)**. The GPLv3 is a "copyleft" license, ensuring that derivatives of the software remain open source and under the GPL.
