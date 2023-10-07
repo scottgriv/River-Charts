@@ -1,6 +1,7 @@
 Repository Tier: Gold
 Technology: Python, Django, Plotly, Pandas, API
 Category: Web, Charts
+Order: 4
 
 # This file connects this repository to the PRG guideline and categorization system.
 # Include this file in your root/docs folder for this repo to properly connect to your PRG system.
