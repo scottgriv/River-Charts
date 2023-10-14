@@ -6,7 +6,7 @@ This repository is catagorized under the **PRG** system.
 
 Repository Tier: Gold <br>
 Technology: Python, Django, Plotly, Pandas, API <br>
-Category: Web Application, Data Analytics <br>
+Category: Web Application <br>
 Order: 4 <br>
 
 ## How this works
