@@ -1,6 +1,6 @@
 <!-- Begin README -->
 
-[![App Logo](./docs/images/banner_large.png)](http://scottgriv.pythonanywhere.com/)
+[![App Logo](./docs/images/banner_large.png)](https://www.rivercharts.app)
 
 <p align="center">
     <a href="https://www.python.org/">
@@ -194,7 +194,7 @@ Now, you can visit `http://127.0.0.1:8000/` in your browser to access the applic
     - The file is read in `views.py` and passed to the template as a `context` variable.
 
 ## Deployment
-- The application is hosted [here](http://scottgriv.pythonanywhere.com/) on [PythonAnywhere](https://www.pythonanywhere.com/).
+- The application is hosted [here](https://www.rivercharts.app) on [PythonAnywhere](https://www.pythonanywhere.com/).
 - The application is deployed using a `WSGI` configuration file.
     - [WSGI Configuration](https://docs.djangoproject.com/en/3.2/howto/deployment/wsgi/)
 - First, make sure you adjust your `settings.py` file `ALLOWED_HOSTS` to include your deployment host.
