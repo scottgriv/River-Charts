@@ -39,7 +39,7 @@
 - The data is captured by the USGS using a [gage height](#gage-height) sensor every 15 minutes.
 - I recommend using the application on a desktop since the chart is interactive has a wider view, but it can be used on a mobile device as well.
 - Please be patient, the loading time of the application is around 60+ seconds (depending on your internet connection), due to the large `API` `JSON` response and the amount of data being processed from the USGS.
-- Visit the application [here](http://scottgriv.pythonanywhere.com/).
+- Visit the application [here](https://www.rivercharts.app).
 
 <div align="center">
   <img src="./docs/images/demo_1.gif" alt="Demo_1" style="width: 80%; margin: 5px;">
