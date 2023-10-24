@@ -286,7 +286,7 @@ footer img {
 .link-container a span {
   vertical-align: middle;
   text-decoration: underline; 
-  margin-left: 5px;
+  margin-left: 2px;
 }
 
 /* Media query for smaller viewports */

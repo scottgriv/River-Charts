@@ -4,44 +4,40 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Replace the meta tags with your information (optional) -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Python, Django, Plotly, and Pandas web application that visualizes river data pulled using an API from the United States Geological Survey (USGS).">
+    <!-- Sharing on social media and X -->
+    <meta property="og:title" content="River Charts">
+    <meta property="og:description" content="A Python, Django, Plotly, and Pandas web application that visualizes river data pulled using an API from the United States Geological Survey (USGS).">
+    <meta property="og:image" content="{% static 'assets/banner_social.png' %}">
+    <meta property="og:url" content="https://www.rivercharts.app">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@scottgrivner">
+    <meta name="twitter:title" content="River Charts">
+    <meta name="twitter:description" content="A Python, Django, Plotly, and Pandas web application that visualizes river data pulled using an API from the United States Geological Survey (USGS).">
+    <meta name="twitter:image" content="{% static 'assets/banner_social.png' %}">
+    <meta name="robots" content="index, follow">
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/static/assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/static/assets/favicon/safari-pinned-tab.svg" color="#f7b500">
+    <link rel="shortcut icon" href="/static/assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#f7b500">
+    <meta name="msapplication-config" content="/static/assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#f7b500">
+    <!-- Web page title -->
     <title>River Charts</title>
-    <!-- Include Plotly.js library -->
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <!-- Include Plotly and jQuery libraries -->
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="/static/css/styles.css" />
     <script src="/static/js/script.js"></script>
-
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="/static/assets/favicon/favicon.ico"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/static/assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/static/assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/static/assets/favicon/favicon-16x16.png"
-    />
-    <link
-      rel="mask-icon"
-      href="/static/assets/favicon/safari-pinned-tab.svg"
-      color="#ADD8E6"
-    />
-    <meta name="msapplication-TileColor" content="#ADD8E6" />
-    <meta name="theme-color" content="#ADD8E6" />
   </head>
   <body>
     <!-- Header -->
@@ -80,7 +76,7 @@
       <div class="link-container">
         <a href="https://github.com/scottgriv/River-Charts" target="_blank">
           <img src="{% static 'assets/github_icon.png' %}" alt="GitHub Icon" />
-          <span>GitHub Repository</span>
+          <span>Check out River Charts on GitHub!</span>
         </a>
       </div>
       <span class="break-container"> | </span>
