@@ -183,6 +183,12 @@ def river_graph_data(request):
 
             width = request.GET.get('width', 1400) # Default to 1400 if width is not provided
 
+            # Adjust the threshold as necessary. For example, 768 is a common breakpoint for tablets and below.
+            is_mobile = int(width) <= 768 
+
+            # Adjust the bottom margin based on whether it's mobile or not
+            bottom_margin_value = 110 if is_mobile else 50
+
             x_min = df['Date Time'].min()  # Get the earliest date
             x_max = df['Date Time'].max()  # Get the latest date
 
@@ -205,7 +211,7 @@ def river_graph_data(request):
                 width=int(width),
                 height=590,
                 autosize=True,
-                margin=dict(l=50, r=50, b=50, t=50, pad=0) # Adjusting the margins
+                margin=dict(l=50, r=50, b=bottom_margin_value, t=50, pad=0) # Adjusting the margins
             )
 
     # Convert the plot to HTML

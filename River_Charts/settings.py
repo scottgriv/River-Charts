@@ -50,7 +50,8 @@ ALLOWED_HOSTS = [
     'scottgriv.pythonanywhere.com', 
     'rivercharts.app',  
     'www.rivercharts.app',  
-    '127.0.0.1'
+    '127.0.0.1',
+    'localhost'
 ]
 
 # Application definition
