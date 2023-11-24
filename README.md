@@ -3,36 +3,30 @@
 [![App Logo](./docs/images/banner_large.png)](https://www.rivercharts.app)
 
 <p align="center">
-    <a href="https://www.python.org/">
-        <img src="https://img.shields.io/badge/Python-3.10.13-244C6F?style=for-the-badge&logo=python" alt="Python Badge" />
+    <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.10.13-244C6F?style=for-the-badge&logo=python" alt="Python Badge" />
     </a>
-    <a href="https://www.djangoproject.com/">
-        <img src="https://img.shields.io/badge/Django-4.2.5-0B4B33?style=for-the-badge&logo=django" alt="Django Badge" />
+    <a href="https://www.djangoproject.com/"><img src="https://img.shields.io/badge/Django-4.2.5-0B4B33?style=for-the-badge&logo=django" alt="Django Badge" />
     </a>
-    <a href="https://plotly.com/">
-        <img src="https://img.shields.io/badge/Plotly-5.17.0-7976FF?style=for-the-badge&logo=plotly" alt="Plotly Badge" />
+    <a href="https://plotly.com/"><img src="https://img.shields.io/badge/Plotly-5.17.0-7976FF?style=for-the-badge&logo=plotly" alt="Plotly Badge" />
     </a>
-    <a href="https://pandas.pydata.org/">
-        <img src="https://img.shields.io/badge/Pandas-2.1.0-130753?style=for-the-badge&logo=pandas" alt="Pandas Badge" />
+    <a href="https://pandas.pydata.org/"><img src="https://img.shields.io/badge/Pandas-2.1.0-130753?style=for-the-badge&logo=pandas" alt="Pandas Badge" />
     </a>
     <br>
-    <a href="https://github.com/scottgriv">
-        <img src="https://img.shields.io/badge/github-follow-9031AC?style=for-the-badge&logo=github&color=9031AC" alt="GitHub Badge" />
+    <a href="https://github.com/scottgriv"><img src="https://img.shields.io/badge/github-follow-9031AC?style=for-the-badge&logo=github&color=9031AC" alt="GitHub Badge" />
     </a>
-    <a href="mailto:scott.grivner@gmail.com">
-        <img src="https://img.shields.io/badge/gmail-contact me-DC4233?style=for-the-badge&logo=gmail" alt="Email Badge" />
+    <a href="mailto:scott.grivner@gmail.com"><img src="https://img.shields.io/badge/gmail-contact me-DC4233?style=for-the-badge&logo=gmail" alt="Email Badge" />
     </a>
-    <a href="https://www.buymeacoffee.com/scottgriv">
-        <img src="https://img.shields.io/badge/buy me a coffee-support me-FEDE1F?style=for-the-badge&logo=buymeacoffee&color=FEDE1F" alt="BuyMeACoffee Badge" />
+    <a href="https://www.buymeacoffee.com/scottgriv"><img src="https://img.shields.io/badge/buy me a coffee-support me-FEDE1F?style=for-the-badge&logo=buymeacoffee&color=FEDE1F" alt="BuyMeACoffee Badge" />
     </a>
-    <a href="https://github.com/scottgriv/PRG-Personal-Repository-Guidelines">
-        <img src="https://img.shields.io/badge/PRG-Gold Project-FFD700?style=for-the-badge&logo=data:image/svg%2bxml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDIwMDEwOTA0Ly9FTiIKICJodHRwOi8vd3d3LnczLm9yZy9UUi8yMDAxL1JFQy1TVkctMjAwMTA5MDQvRFREL3N2ZzEwLmR0ZCI+CjxzdmcgdmVyc2lvbj0iMS4wIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiB3aWR0aD0iMjYuMDAwMDAwcHQiIGhlaWdodD0iMzQuMDAwMDAwcHQiIHZpZXdCb3g9IjAgMCAyNi4wMDAwMDAgMzQuMDAwMDAwIgogcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQgbWVldCI+Cgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjAwMDAwMCwzNC4wMDAwMDApIHNjYWxlKDAuMTAwMDAwLC0wLjEwMDAwMCkiCmZpbGw9IiNGRkQ3MDAiIHN0cm9rZT0ibm9uZSI+CjxwYXRoIGQ9Ik0xMiAzMjggYy04IC04IC0xMiAtNTEgLTEyIC0xMzUgMCAtMTA5IDIgLTEyNSAxOSAtMTQwIDQyIC0zOCA0OAotNDIgNTkgLTMxIDcgNyAxNyA2IDMxIC0xIDEzIC03IDIxIC04IDIxIC0yIDAgNiAyOCAxMSA2MyAxMyBsNjIgMyAwIDE1MCAwCjE1MCAtMTE1IDMgYy04MSAyIC0xMTkgLTEgLTEyOCAtMTB6IG0xMDIgLTc0IGMtNiAtMzMgLTUgLTM2IDE3IC0zMiAxOCAyIDIzCjggMjEgMjUgLTMgMjQgMTUgNDAgMzAgMjUgMTQgLTE0IC0xNyAtNTkgLTQ4IC02NiAtMjAgLTUgLTIzIC0xMSAtMTggLTMyIDYKLTIxIDMgLTI1IC0xMSAtMjIgLTE2IDIgLTE4IDEzIC0xOCA2NiAxIDc3IDAgNzIgMTggNzIgMTMgMCAxNSAtNyA5IC0zNnoKbTExNiAtMTY5IGMwIC0yMyAtMyAtMjUgLTQ5IC0yNSAtNDAgMCAtNTAgMyAtNTQgMjAgLTMgMTQgLTE0IDIwIC0zMiAyMCAtMTgKMCAtMjkgLTYgLTMyIC0yMCAtNyAtMjUgLTIzIC0yNiAtMjMgLTIgMCAyOSA4IDMyIDEwMiAzMiA4NyAwIDg4IDAgODggLTI1eiIvPgo8L2c+Cjwvc3ZnPgo=" alt="Gold PRG Badge" />
+    <br>
+    <a href="https://prgoptimized.com"><img src="https://img.shields.io/badge/PRG-Gold Project-FFD700?style=for-the-badge&logo=data:image/svg%2bxml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDIwMDEwOTA0Ly9FTiIKICJodHRwOi8vd3d3LnczLm9yZy9UUi8yMDAxL1JFQy1TVkctMjAwMTA5MDQvRFREL3N2ZzEwLmR0ZCI+CjxzdmcgdmVyc2lvbj0iMS4wIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiB3aWR0aD0iMjYuMDAwMDAwcHQiIGhlaWdodD0iMzQuMDAwMDAwcHQiIHZpZXdCb3g9IjAgMCAyNi4wMDAwMDAgMzQuMDAwMDAwIgogcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQgbWVldCI+Cgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjAwMDAwMCwzNC4wMDAwMDApIHNjYWxlKDAuMTAwMDAwLC0wLjEwMDAwMCkiCmZpbGw9IiNGRkQ3MDAiIHN0cm9rZT0ibm9uZSI+CjxwYXRoIGQ9Ik0xMiAzMjggYy04IC04IC0xMiAtNTEgLTEyIC0xMzUgMCAtMTA5IDIgLTEyNSAxOSAtMTQwIDQyIC0zOCA0OAotNDIgNTkgLTMxIDcgNyAxNyA2IDMxIC0xIDEzIC03IDIxIC04IDIxIC0yIDAgNiAyOCAxMSA2MyAxMyBsNjIgMyAwIDE1MCAwCjE1MCAtMTE1IDMgYy04MSAyIC0xMTkgLTEgLTEyOCAtMTB6IG0xMDIgLTc0IGMtNiAtMzMgLTUgLTM2IDE3IC0zMiAxOCAyIDIzCjggMjEgMjUgLTMgMjQgMTUgNDAgMzAgMjUgMTQgLTE0IC0xNyAtNTkgLTQ4IC02NiAtMjAgLTUgLTIzIC0xMSAtMTggLTMyIDYKLTIxIDMgLTI1IC0xMSAtMjIgLTE2IDIgLTE4IDEzIC0xOCA2NiAxIDc3IDAgNzIgMTggNzIgMTMgMCAxNSAtNyA5IC0zNnoKbTExNiAtMTY5IGMwIC0yMyAtMyAtMjUgLTQ5IC0yNSAtNDAgMCAtNTAgMyAtNTQgMjAgLTMgMTQgLTE0IDIwIC0zMiAyMCAtMTgKMCAtMjkgLTYgLTMyIC0yMCAtNyAtMjUgLTIzIC0yNiAtMjMgLTIgMCAyOSA4IDMyIDEwMiAzMiA4NyAwIDg4IDAgODggLTI1eiIvPgo8L2c+Cjwvc3ZnPgo=" alt="Gold PRG Badge" />
     </a>
 </p>
 
--------
+---------------
 
-# River Charts
+<h1 align="center">River Charts</h1>
+
 **River Charts** is a `Python`, `Django`, `Plotly`, and `Pandas` web application that visualizes river data for a specific river/site/location.
 - The line graph is driven by data pulled using an `API` from the [United States Geological Survey (USGS)](https://www.usgs.gov/).
 - The data is updated with the most recent river height data every time the application is loaded.
@@ -46,22 +40,38 @@
   <img src="./docs/images/demo_2.png" alt="Demo_2" style="width: 80%; margin: 5px;">
 </div>
 
-# Table of Contents
-- [Background](#background)
-- [Gage Height](#gage-height)
-- [What's Inside?](#whats-inside)
+---------------
+
+## Table of Contents
+
+- [Features](#features)
+- [Background Story](#background-story)
+    - [Gage Height](#gage-height)
 - [Dependencies](#dependencies)
 - [Getting Started](#getting-started)
-- [Configuration](#configuration)
-- [Deployment](#deployment)
+- [What's Inside?](#whats-inside)
 - [Calling the API](#calling-the-api)
 - [API Output Example](#api-output-example)
-- [Project](#project)
 - [Disclaimer](#disclaimer)
+- [Project](#project)
+- [Configuration](#configuration)
+- [Deployment](#deployment)
 - [License](#license)
 - [Credit](#credit)
 
-# Background
+## Features
+
+- [x] **Responsive:** The application is responsive and can be used on a mobile device.
+- [x] **Interactive:** The application uses `Plotly` to create an interactive line graph.
+- [x] **Data Visualization:** The application visualizes river data for a specific river/site/location.
+- [x] **Data Source:** The application sources data using an `API` that returns `JSON` output.
+- [x] **Data Processing:** The application processes the `JSON` output and converts it to a `Pandas` `DataFrame`.
+- [x] **Data Manipulation:** The application manipulates the `DataFrame` to create a `Plotly` line graph.
+- [x] **Data Update:** The application updates the data with the most recent river height data every time the application is loaded.
+- [x] **Data Capture:** The data is captured by the USGS using a [gage height](#gage-height) sensor every 15 minutes.
+
+## Background Story
+
 Every year, my friends and I float 2 miles down the **Susquehanna River** in **NEPA** on river tubes (a 2 hour float). I wanted to create a web application that would allow us to visualize past river data in order to see the river height on the days we floated down the river. Some float dates, we still got together, but we didn't float due to the dangerous river levels. 
 <span style="color:green"><b>Green</b></span> plots on the graph represent the dates we did float (with a "Floated" status of "Yes"), and 
 <span style="color:red"><b>Red</b></span> plots represent the dates we did not float (with a "Floated" status of "No").
@@ -76,7 +86,8 @@ Every year, my friends and I float 2 miles down the **Susquehanna River** in **N
     <i>West Branch, Susquehanna River.</i>
 </div>
 
-## Gage Height
+### Gage Height
+
 <div align="center">
     <a href="https://waterdata.usgs.gov/blog/gage_height/" target="_blank">
         <img src="./docs/images/gage_height_1.jpg" style="width: 80%;"/>
@@ -89,45 +100,8 @@ Every year, my friends and I float 2 miles down the **Susquehanna River** in **N
     <i>The application uses gage height data to plot the river height in feet on a given date.</i>
 </div>
 
-## What's Inside?
-A quick look at the important files and directories you'll see in this project:
-
-```bash
-├── README.md # This file.
-├── config.py # A file that contains sensitive information (excluded from this repository).
-├── manage.py # A command-line utility that lets you interact with this Django project in various ways.
-├── requirements.txt # A list of Python packages required to run this project.
-├── River_Charts # A directory for the river_charts app.
-│   ├── __init__.py # An empty file that tells Python that this directory should be considered a Python package.
-│   ├── admin.py # A file that registers models to be displayed in the Django admin site.
-│   ├── apps.py # A file that contains the application configuration.
-│   ├── models.py # A file that contains the database models.
-│   ├── tests.py # A file that contains the tests for the application.
-│   ├── urls.py # A file that contains the URL declarations for the application.
-│   └── views.py # A file that contains the application logic.
-├── river_charts # The Django project directory.
-│   ├── __init__.py # An empty file that tells Python that this directory should be considered a Python package.
-│   ├── asgi.py # An entry-point for ASGI-compatible web servers to serve your project.
-│   ├── settings.py # Settings/configuration for this Django project.
-│   ├── urls.py # The URL declarations for this Django project.
-│   └── wsgi.py # An entry-point for WSGI-compatible web servers to serve your project.
-├── static # A directory for static files that are used in this Django project.
-│   ├── css # A directory for CSS files.
-│   │   └── styles.css # A CSS file that contains the styles for the application.
-│   ├── data # A directory for data files.
-│   │   └── river_charts.csv # A CSV file that contains the float dates for the application.
-│   └── images # A directory for image files.
-├── templates # A directory for HTML templates.
-│   └── river_charts # A directory for HTML templates specific to the river_charts app.
-│       ├── error.html # An HTML template that displays an error message.
-│       └── index.html # An HTML template that displays the application.
-├── views.py # A file that contains the application logic.
-├── VERSION # A file that contains the current version of the application.
-├── LICENSE # A file that contains the license for this project.
-└── CREDITS # A file that contains the credits for this project.
-```
-
 ## Dependencies
+
 This project makes use of several libraries and frameworks:
 - **Python:** For the application logic.
 - **Django:** For web application functionality.
@@ -138,6 +112,7 @@ This project makes use of several libraries and frameworks:
 - *See [requirements.txt](requirements.txt) for a full list of dependencies.*
 
 ## Getting Started
+
 To install and run the project locally, follow the steps below:
 
 1. Clone the repository:
@@ -183,28 +158,45 @@ To install and run the project locally, follow the steps below:
 
 Now, you can visit `http://127.0.0.1:8000/` in your browser to access the application.
 
-## Configuration
-- Edit `config.py` to add your own USGS `API` (and other) information.
-    - [USGS API](https://waterservices.usgs.gov/rest/IV-Service.html)
-    - [USGS API Documentation](https://help.waterdata.usgs.gov/faq/automated-retrievals)
-- Toggle `USE_DUMMY_DATA` to `True` in `config.py` to use dummy data instead of the `API`.
-    - This is useful for testing the application without making `API` calls.
-- The float data plots are driven from a `.csv` file located in `static/data/river_charts.csv`.
-    - This file can be edited to add/remove float dates.
-    - The file is read in `views.py` and passed to the template as a `context` variable.
+## What's Inside?
 
-## Deployment
-- The application is hosted [here](https://www.rivercharts.app) on [PythonAnywhere](https://www.pythonanywhere.com/).
-- The application is deployed using a `WSGI` configuration file.
-    - [WSGI Configuration](https://docs.djangoproject.com/en/3.2/howto/deployment/wsgi/)
-- First, make sure you adjust your `settings.py` file `ALLOWED_HOSTS` to include your deployment host.
-    - [Deploying Django](https://docs.djangoproject.com/en/3.2/howto/deployment/)
-- Second, make sure you adjust your `settings.py` file `DEBUG` to `False` for production.
-    - [Django Settings](https://docs.djangoproject.com/en/3.2/ref/settings/)
-- Finnaly, be sure to create a `.env` file where you host your application to store your sensitive information (excluded from this repository).
-    - [Python-Decouple](https://pypi.org/project/python-decouple/)
+Below is a list of the main files and folders in this repository and their specific purposes:
+```bash
+River-Charts # Root folder
+├── README.md # This file.
+├── config.py # A file that contains sensitive information (excluded from this repository).
+├── manage.py # A command-line utility that lets you interact with this Django project in various ways.
+├── requirements.txt # A list of Python packages required to run this project.
+├── River_Charts # A directory for the river_charts app.
+│   ├── __init__.py # An empty file that tells Python that this directory should be considered a Python package.
+│   ├── admin.py # A file that registers models to be displayed in the Django admin site.
+│   ├── apps.py # A file that contains the application configuration.
+│   ├── models.py # A file that contains the database models.
+│   ├── tests.py # A file that contains the tests for the application.
+│   ├── urls.py # A file that contains the URL declarations for the application.
+│   └── views.py # A file that contains the application logic.
+├── river_charts # The Django project directory.
+│   ├── __init__.py # An empty file that tells Python that this directory should be considered a Python package.
+│   ├── asgi.py # An entry-point for ASGI-compatible web servers to serve your project.
+│   ├── settings.py # Settings/configuration for this Django project.
+│   ├── urls.py # The URL declarations for this Django project.
+│   └── wsgi.py # An entry-point for WSGI-compatible web servers to serve your project.
+├── static # A directory for static files that are used in this Django project.
+│   ├── css # A directory for CSS files.
+│   │   └── styles.css # A CSS file that contains the styles for the application.
+│   ├── data # A directory for data files.
+│   │   └── river_charts.csv # A CSV file that contains the float dates for the application.
+│   └── images # A directory for image files.
+├── templates # A directory for HTML templates.
+│   └── river_charts # A directory for HTML templates specific to the river_charts app.
+│       ├── error.html # An HTML template that displays an error message.
+│       └── index.html # An HTML template that displays the application.
+├── views.py # A file that contains the application logic.
+└── LICENSE # A file that contains the license for this project.
+```
 
 ## Calling the API
+
 To call the `API` and retrieve the data:
 
 1. Make a GET request to: `http://nwis.waterservices.usgs.gov/nwis/...` (based on your requirements).
@@ -249,6 +241,7 @@ To call the `API` and retrieve the data:
 </div>
 
 ## API Output Example
+
 The application sources data using an `API` that returns `JSON` output. Here's an example of what the API response looks like:
 
 ```json
@@ -282,23 +275,53 @@ The application sources data using an `API` that returns `JSON` output. Here's a
 ```
 (For the sake of brevity, the full output is abbreviated with `...`)
 
-## Project
-Please reference the [GitHub Project](https://github.com/users/scottgriv/projects/7) tab inside this Repo to get a good understanding of where I'm currently at with the overall project. Bugs and Enhancements will also be tracked there as well.
-
 ## Disclaimer
+
 - The data provided by this application is sourced from the [USGS](https://www.usgs.gov/). 
 - It's subject to revision, and for more information, please refer to their [official disclaimer](http://waterdata.usgs.gov/nwis/help/?provisional).
 - Software is provided as-is and no warranty is given about its usability. 
 
+## Project
+
+Please reference the [GitHub Project](https://github.com/users/scottgriv/projects/7) tab inside this Repo to get a good understanding of where I'm currently at with the overall project. Bugs and Enhancements will also be tracked there as well.
+
+## Configuration
+
+- Edit `config.py` to add your own USGS `API` (and other) information.
+    - [USGS API](https://waterservices.usgs.gov/rest/IV-Service.html)
+    - [USGS API Documentation](https://help.waterdata.usgs.gov/faq/automated-retrievals)
+- Toggle `USE_DUMMY_DATA` to `True` in `config.py` to use dummy data instead of the `API`.
+    - This is useful for testing the application without making `API` calls.
+- The float data plots are driven from a `.csv` file located in `static/data/river_charts.csv`.
+    - This file can be edited to add/remove float dates.
+    - The file is read in `views.py` and passed to the template as a `context` variable.
+
+## Deployment
+
+- The application is hosted [here](https://www.rivercharts.app) on [PythonAnywhere](https://www.pythonanywhere.com/).
+- The application is deployed using a `WSGI` configuration file.
+    - [WSGI Configuration](https://docs.djangoproject.com/en/3.2/howto/deployment/wsgi/)
+- First, make sure you adjust your `settings.py` file `ALLOWED_HOSTS` to include your deployment host.
+    - [Deploying Django](https://docs.djangoproject.com/en/3.2/howto/deployment/)
+- Second, make sure you adjust your `settings.py` file `DEBUG` to `False` for production.
+    - [Django Settings](https://docs.djangoproject.com/en/3.2/ref/settings/)
+- Finnaly, be sure to create a `.env` file where you host your application to store your sensitive information (excluded from this repository).
+    - [Python-Decouple](https://pypi.org/project/python-decouple/)
+
 ## License
+
 - **River Charts** is released under the terms of the **GNU General Public License, version 3 (GPLv3)**. The GPLv3 is a "copyleft" license, ensuring that derivatives of the software remain open source and under the GPL.
 - For more details and to understand all requirements and conditions, see the [LICENSE](LICENSE) file in this repository.
 
 ## Credit
-**Author:** Scott Grivner <br>
-**Email:** scott.grivner@gmail.com <br>
+
+**Author:** [Scott Grivner](https://github.com/scottgriv) <br>
+**Email:** [scott.grivner@gmail.com](mailto:scott.grivner@gmail.com) <br>
 **Website:** [scottgrivner.dev](https://www.scottgrivner.dev) <br>
 **Reference:** [Main Branch](https://github.com/scottgriv/River-Charts) <br>
+
+---------------
+
 <div align="center">
     <a href="https://github.com/scottgriv/River-Charts" target="_blank">
         <img src="./docs/images/icon-rounded.png" width="100" height="100"/>
