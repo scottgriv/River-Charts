@@ -128,7 +128,7 @@ This project makes use of several libraries and frameworks:
     - This file can be edited to add/remove float dates.
     - The file is read in `views.py` and passed to the template as a `context` variable.
 
-### Running Locally
+### Installation
 
 To install and run the project locally, follow the steps below:
 
@@ -192,38 +192,45 @@ Now, you can visit `http://127.0.0.1:8000/` in your browser to access the applic
 Below is a list of the main files and folders in this repository and their specific purposes:
 ```bash
 River-Charts # Root folder
-├── README.md # This file.
-├── config.py # A file that contains sensitive information (excluded from this repository).
-├── manage.py # A command-line utility that lets you interact with this Django project in various ways.
-├── requirements.txt # A list of Python packages required to run this project.
-├── River_Charts # A directory for the river_charts app.
-│   ├── __init__.py # An empty file that tells Python that this directory should be considered a Python package.
-│   ├── admin.py # A file that registers models to be displayed in the Django admin site.
-│   ├── apps.py # A file that contains the application configuration.
-│   ├── models.py # A file that contains the database models.
-│   ├── tests.py # A file that contains the tests for the application.
-│   ├── urls.py # A file that contains the URL declarations for the application.
-│   └── views.py # A file that contains the application logic.
-├── river_charts # The Django project directory.
-│   ├── __init__.py # An empty file that tells Python that this directory should be considered a Python package.
-│   ├── asgi.py # An entry-point for ASGI-compatible web servers to serve your project.
-│   ├── settings.py # Settings/configuration for this Django project.
-│   ├── urls.py # The URL declarations for this Django project.
-│   └── wsgi.py # An entry-point for WSGI-compatible web servers to serve your project.
-├── static # A directory for static files that are used in this Django project.
-│   ├── css # A directory for CSS files.
-│   │   └── styles.css # A CSS file that contains the styles for the application.
-│   ├── data # A directory for data files.
-│   │   └── river_charts.csv # A CSV file that contains the float dates for the application.
-│   └── images # A directory for image files.
-├── templates # A directory for HTML templates.
-│   └── river_charts # A directory for HTML templates specific to the river_charts app.
-│       ├── error.html # An HTML template that displays an error message.
-│       └── index.html # An HTML template that displays the application.
-├── views.py # A file that contains the application logic.
-└── LICENSE # A file that contains the license for this project.
+├─ config.py # A file that contains sensitive information (excluded from this repository).
+├─ manage.py # A command-line utility that lets you interact with this Django project in various ways.
+├─ requirements.txt # A list of Python packages required to run this project.
+├─ River_Charts # A directory for the river_charts app.
+│   ├─ __init__.py # An empty file that tells Python that this directory should be considered a Python package.
+│   ├─ admin.py # A file that registers models to be displayed in the Django admin site.
+│   ├─ apps.py # A file that contains the application configuration.
+│   ├─ models.py # A file that contains the database models.
+│   ├─ tests.py # A file that contains the tests for the application.
+│   ├─ urls.py # A file that contains the URL declarations for the application.
+│   └─ views.py # A file that contains the application logic.
+├─ river_charts # The Django project directory.
+│   ├─ __init__.py # An empty file that tells Python that this directory should be considered a Python package.
+│   ├─ asgi.py # An entry-point for ASGI-compatible web servers to serve your project.
+│   ├─ settings.py # Settings/configuration for this Django project.
+│   ├─ urls.py # The URL declarations for this Django project.
+│   └─ wsgi.py # An entry-point for WSGI-compatible web servers to serve your project.
+├─ static # A directory for static files that are used in this Django project.
+│   ├─ css # A directory for CSS files.
+│   │   └─ styles.css # A CSS file that contains the styles for the application.
+│   ├─ data # A directory for data files.
+│   │   └─ river_charts.csv # A CSV file that contains the float dates for the application.
+│   └─ images # A directory for image files.
+├─ templates # A directory for HTML templates.
+│   └─ river_charts # A directory for HTML templates specific to the river_charts app.
+│       ├─ error.html # An HTML template that displays an error message.
+│       └─ index.html # An HTML template that displays the application.
+├─ views.py # A file that contains the application logic.
+├─ .github # GitHub folder
+├─ .gitignore # Git ignore file
+├─ .gitattributes # Git attributes file
+├─ PRG.md # PRG Connection File
+├─ LICENSE # A file that contains the license for this project.
+└─ README.md # This file.
+
 ```
 ## API Documentation
+
+Below is the documentation for the `API` used in this application.
 
 ### Calling the API
 
@@ -342,18 +349,20 @@ Feel free to submit a pull request if you find any issues or have any suggestion
 
 ## Resources
 
-- [Python](https://www.python.org/)
-- [Django](https://www.djangoproject.com/)
-- [Plotly](https://plotly.com/)
-- [Pandas](https://pandas.pydata.org/)
-- [Requests](https://docs.python-requests.org/en/latest/)
-- [Python-Decouple](https://pypi.org/project/python-decouple/)
-- [USGS](https://www.usgs.gov/)
-- [USGS API](https://waterservices.usgs.gov/rest/IV-Service.html)
-- [USGS API Documentation](https://help.waterdata.usgs.gov/faq/automated-retrievals)
-- [USGS Site Web Service](https://waterservices.usgs.gov/rest/Site-Service.html)
-- [Codes and Parameters](https://help.waterdata.usgs.gov/codes-and-parameters)
-- [Deploying Django](https://docs.djangoproject.com/en/3.2/howto/deployment/)
+Below are some external resources I found helpful when creating **River Charts**:
+
+- [Python](https://www.python.org/) - A programming language that lets you work quickly and integrate systems more effectively.
+- [Django](https://www.djangoproject.com/) - A high-level Python Web framework that encourages rapid development and clean, pragmatic design.
+- [Plotly](https://plotly.com/) - A Python graphing library that makes interactive, publication-quality graphs online.
+- [Pandas](https://pandas.pydata.org/) - A fast, powerful, flexible and easy to use open source data analysis and manipulation tool.
+- [Requests](https://docs.python-requests.org/en/latest/) - A simple, yet elegant HTTP library.
+- [Python-Decouple](https://pypi.org/project/python-decouple/) - A Python library for separating the settings of your Django/Flask/FastAPI project from the source code.
+- [USGS](https://www.usgs.gov/) - The United States Geological Survey.
+- [USGS API](https://waterservices.usgs.gov/rest/IV-Service.html) - The USGS Instantaneous Values Web Service.
+- [USGS API Documentation](https://help.waterdata.usgs.gov/faq/automated-retrievals) - The USGS Instantaneous Values Web Service Documentation.
+- [USGS Site Web Service](https://waterservices.usgs.gov/rest/Site-Service.html) - The USGS Site Web Service.
+- [Codes and Parameters](https://help.waterdata.usgs.gov/codes-and-parameters) - The USGS Codes and Parameters Documentation.
+- [Deploying Django](https://docs.djangoproject.com/en/3.2/howto/deployment/) - 
 - [Django Settings](https://docs.djangoproject.com/en/3.2/ref/settings/)
 - [Running the Django server](https://docs.djangoproject.com/en/3.2/intro/tutorial01/#the-development-server)
 - [Creating Virtual Environments](https://docs.python.org/3/tutorial/venv.html)
