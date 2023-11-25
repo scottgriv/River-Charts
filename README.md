@@ -38,16 +38,21 @@
 
 - [Features](#features)
 - [Background Story](#background-story)
-    - [Gage Height](#gage-height)
-- [Dependencies](#dependencies)
+- [Definitions](#definitions)
 - [Getting Started](#getting-started)
+    - [Dependencies](#dependencies)
+    - [Configuration](#configuration)
+    - [Running Locally](#running-locally)
+    - [Deployment](#deployment)
 - [What's Inside?](#whats-inside)
-- [Calling the API](#calling-the-api)
-- [API Output Example](#api-output-example)
+- [API Documentation](#api-documentation)
+    - [Calling the API](#calling-the-api)
+    - [API Output Example](#api-output-example)
 - [Disclaimer](#disclaimer)
+- [What's Next?](#whats-next)
 - [Project](#project)
-- [Configuration](#configuration)
-- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [Resources](#resources)
 - [License](#license)
 - [Credit](#credit)
 
@@ -78,8 +83,6 @@ Every year, my friends and I float 2 miles down the **Susquehanna River** in **N
     <i>West Branch, Susquehanna River.</i>
 </div>
 
-### Gage Height
-
 <div align="center">
     <a href="https://waterdata.usgs.gov/blog/gage_height/" target="_blank">
         <img src="./docs/images/gage_height_1.jpg" style="width: 80%;"/>
@@ -92,7 +95,18 @@ Every year, my friends and I float 2 miles down the **Susquehanna River** in **N
     <i>The application uses gage height data to plot the river height in feet on a given date.</i>
 </div>
 
-## Dependencies
+## Definitions
+
+Here are some definitions to help you understand the terminology used in this document:
+
+- <ins><b>USGS</b></ins>: The United States Geological Survey. The USGS is a science organization that provides impartial information on the health of our ecosystems and environment, the natural hazards that threaten us, the natural resources we rely on, the impacts of climate and land-use change, and the core science systems that help us provide timely, relevant, and useable information.
+    - [USGS](https://www.usgs.gov/)
+- <ins><b>Gage Height</b></ins>: The height of the water surface above the gage datum (zero point). Gage height is often used interchangeably with the more general term, stage, although gage height is more appropriate when used with a gage reading. Stage is more appropriate when used with a recorded or calculated gage height.
+    - [Gage Height](https://waterdata.usgs.gov/blog/gage_height/)
+
+## Getting Started
+
+### Dependencies
 
 This project makes use of several libraries and frameworks:
 - **Python:** For the application logic.
@@ -103,7 +117,18 @@ This project makes use of several libraries and frameworks:
 - **Python-Decouple:** For storing sensitive information in a `.env` file.
 - *See [requirements.txt](requirements.txt) for a full list of dependencies.*
 
-## Getting Started
+### Configuration
+
+- Edit `config.py` to add your own USGS `API` (and other) information.
+    - [USGS API](https://waterservices.usgs.gov/rest/IV-Service.html)
+    - [USGS API Documentation](https://help.waterdata.usgs.gov/faq/automated-retrievals)
+- Toggle `USE_DUMMY_DATA` to `True` in `config.py` to use dummy data instead of the `API`.
+    - This is useful for testing the application without making `API` calls.
+- The float data plots are driven from a `.csv` file located in `static/data/river_charts.csv`.
+    - This file can be edited to add/remove float dates.
+    - The file is read in `views.py` and passed to the template as a `context` variable.
+
+### Running Locally
 
 To install and run the project locally, follow the steps below:
 
@@ -150,6 +175,18 @@ To install and run the project locally, follow the steps below:
 
 Now, you can visit `http://127.0.0.1:8000/` in your browser to access the application.
 
+### Deployment
+
+- The application is hosted [here](https://www.rivercharts.app) on [PythonAnywhere](https://www.pythonanywhere.com/).
+- The application is deployed using a `WSGI` configuration file.
+    - [WSGI Configuration](https://docs.djangoproject.com/en/3.2/howto/deployment/wsgi/)
+- First, make sure you adjust your `settings.py` file `ALLOWED_HOSTS` to include your deployment host.
+    - [Deploying Django](https://docs.djangoproject.com/en/3.2/howto/deployment/)
+- Second, make sure you adjust your `settings.py` file `DEBUG` to `False` for production.
+    - [Django Settings](https://docs.djangoproject.com/en/3.2/ref/settings/)
+- Finnaly, be sure to create a `.env` file where you host your application to store your sensitive information (excluded from this repository).
+    - [Python-Decouple](https://pypi.org/project/python-decouple/)
+
 ## What's Inside?
 
 Below is a list of the main files and folders in this repository and their specific purposes:
@@ -186,8 +223,9 @@ River-Charts # Root folder
 ├── views.py # A file that contains the application logic.
 └── LICENSE # A file that contains the license for this project.
 ```
+## API Documentation
 
-## Calling the API
+### Calling the API
 
 To call the `API` and retrieve the data:
 
@@ -232,7 +270,7 @@ To call the `API` and retrieve the data:
     <i>Example of an Error Page.</i>
 </div>
 
-## API Output Example
+### API Output Example
 
 The application sources data using an `API` that returns `JSON` output. Here's an example of what the API response looks like:
 
@@ -273,36 +311,60 @@ The application sources data using an `API` that returns `JSON` output. Here's a
 - It's subject to revision, and for more information, please refer to their [official disclaimer](http://waterdata.usgs.gov/nwis/help/?provisional).
 - Software is provided as-is and no warranty is given about its usability. 
 
+## Closing
+
+Thank you for taking the time to read through this document and I hope you find it useful!
+If you have any questions or suggestions, please feel free to reach out to me.
+> Please reference the [SUPPORT](.github/SUPPORT.md) file in this repository for more details.
+
+## What's Next?
+
+I'm looking forward to seeing how this project evolves over time and how it can help others with their GitHub Portfolio.
+> Please reference the [CHANGELOG](.github/CHANGELOG.md) file in this repository for more details.
+
 ## Project
 
-Please reference the [GitHub Project](https://github.com/users/scottgriv/projects/7) tab inside this Repo to get a good understanding of where I'm currently at with the overall project. Bugs and Enhancements will also be tracked there as well.
+Please reference the [GitHub Project](https://github.com/users/scottgriv/projects/7) tab inside this repository to get a good understanding of where I'm currently at with the overall project.
+- Issues and Enhancements will also be tracked there as well.
 
-## Configuration
+## Contributing
 
-- Edit `config.py` to add your own USGS `API` (and other) information.
-    - [USGS API](https://waterservices.usgs.gov/rest/IV-Service.html)
-    - [USGS API Documentation](https://help.waterdata.usgs.gov/faq/automated-retrievals)
-- Toggle `USE_DUMMY_DATA` to `True` in `config.py` to use dummy data instead of the `API`.
-    - This is useful for testing the application without making `API` calls.
-- The float data plots are driven from a `.csv` file located in `static/data/river_charts.csv`.
-    - This file can be edited to add/remove float dates.
-    - The file is read in `views.py` and passed to the template as a `context` variable.
+Feel free to submit a pull request if you find any issues or have any suggestions on how to improve this project. You can also open an issue with the tag "bug" or "enhancement".
 
-## Deployment
+- How to contribute:
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/River-Charts`)
+3. Commit your Changes (`git commit -m 'Add new feature'`)
+4. Push to the Branch (`git push origin feature/River-Charts`)
+5. Open a Pull Request
 
-- The application is hosted [here](https://www.rivercharts.app) on [PythonAnywhere](https://www.pythonanywhere.com/).
-- The application is deployed using a `WSGI` configuration file.
-    - [WSGI Configuration](https://docs.djangoproject.com/en/3.2/howto/deployment/wsgi/)
-- First, make sure you adjust your `settings.py` file `ALLOWED_HOSTS` to include your deployment host.
-    - [Deploying Django](https://docs.djangoproject.com/en/3.2/howto/deployment/)
-- Second, make sure you adjust your `settings.py` file `DEBUG` to `False` for production.
-    - [Django Settings](https://docs.djangoproject.com/en/3.2/ref/settings/)
-- Finnaly, be sure to create a `.env` file where you host your application to store your sensitive information (excluded from this repository).
-    - [Python-Decouple](https://pypi.org/project/python-decouple/)
+> Please reference the [CONTRIBUTING](.github/CONTRIBUTING.md) file in this repository for more details.
+
+## Resources
+
+- [Python](https://www.python.org/)
+- [Django](https://www.djangoproject.com/)
+- [Plotly](https://plotly.com/)
+- [Pandas](https://pandas.pydata.org/)
+- [Requests](https://docs.python-requests.org/en/latest/)
+- [Python-Decouple](https://pypi.org/project/python-decouple/)
+- [USGS](https://www.usgs.gov/)
+- [USGS API](https://waterservices.usgs.gov/rest/IV-Service.html)
+- [USGS API Documentation](https://help.waterdata.usgs.gov/faq/automated-retrievals)
+- [USGS Site Web Service](https://waterservices.usgs.gov/rest/Site-Service.html)
+- [Codes and Parameters](https://help.waterdata.usgs.gov/codes-and-parameters)
+- [Deploying Django](https://docs.djangoproject.com/en/3.2/howto/deployment/)
+- [Django Settings](https://docs.djangoproject.com/en/3.2/ref/settings/)
+- [Running the Django server](https://docs.djangoproject.com/en/3.2/intro/tutorial01/#the-development-server)
+- [Creating Virtual Environments](https://docs.python.org/3/tutorial/venv.html)
+- [Activating a virtual environment](https://docs.python.org/3/tutorial/venv.html#creating-virtual-environments)
+- [Installing Packages](https://packaging.python.org/tutorials/installing-packages/)
+- [Requirements Files](https://pip.pypa.io/en/stable/user_guide/#requirements-files)
 
 ## License
 
-- **River Charts** is released under the terms of the **GNU General Public License, version 3 (GPLv3)**. The GPLv3 is a "copyleft" license, ensuring that derivatives of the software remain open source and under the GPL.
+This project is released under the terms of the **GNU General Public License, version 3 (GPLv3)**.
+- The GPLv3 is a "copyleft" license, ensuring that derivatives of the software remain open source and under the GPL.
 - For more details and to understand all requirements and conditions, see the [LICENSE](LICENSE) file in this repository.
 
 ## Credit
