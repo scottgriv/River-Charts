@@ -17,7 +17,7 @@
 
 ---------------
 
-<h1 align="center">River Charts</h1>
+<h1 align="center">📈 River Charts 📉</h1>
 
 **River Charts** is a `Python`, `Django`, `Plotly`, and `Pandas` web application that visualizes river data for a specific river/site/location.
 - The line graph is driven by data pulled using an `API` from the [United States Geological Survey (USGS)](https://www.usgs.gov/).
