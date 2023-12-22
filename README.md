@@ -53,6 +53,8 @@
 - [Project](#project)
 - [Contributing](#contributing)
 - [Resources](#resources)
+    - [Technical Resources](#technical-resources)
+    - [Educational Resources](#educational-resources)
 - [License](#license)
 - [Credit](#credit)
 
@@ -351,24 +353,41 @@ Feel free to submit a pull request if you find any issues or have any suggestion
 
 Below are some external resources I found helpful when creating **River Charts**:
 
+### Technical Resources
+
 - [Python](https://www.python.org/) - A programming language that lets you work quickly and integrate systems more effectively.
 - [Django](https://www.djangoproject.com/) - A high-level Python Web framework that encourages rapid development and clean, pragmatic design.
 - [Plotly](https://plotly.com/) - A Python graphing library that makes interactive, publication-quality graphs online.
 - [Pandas](https://pandas.pydata.org/) - A fast, powerful, flexible and easy to use open source data analysis and manipulation tool.
 - [Requests](https://docs.python-requests.org/en/latest/) - A simple, yet elegant HTTP library.
 - [Python-Decouple](https://pypi.org/project/python-decouple/) - A Python library for separating the settings of your Django/Flask/FastAPI project from the source code.
+- [Deploying Django](https://docs.djangoproject.com/en/3.2/howto/deployment/) - A tutorial on how to deploy Django.
+- [Django Settings](https://docs.djangoproject.com/en/3.2/ref/settings/) - A list of all settings available in Django.
+- [Running the Django server](https://docs.djangoproject.com/en/3.2/intro/tutorial01/#the-development-server) - A tutorial on how to run the Django server.
+- [Creating Virtual Environments](https://docs.python.org/3/tutorial/venv.html) - A tutorial on how to create virtual environments.
+- [Activating a virtual environment](https://docs.python.org/3/tutorial/venv.html#creating-virtual-environments) - A tutorial on how to activate a virtual environment.
+- [Installing Packages](https://packaging.python.org/tutorials/installing-packages/) - A tutorial on how to install packages using `pip`.
+- [Requirements Files](https://pip.pypa.io/en/stable/user_guide/#requirements-files) - A file containing a list of items to be installed using pip install like so: `pip install -r requirements.txt`.
+- [PythonAnywhere](https://www.pythonanywhere.com/) - A Python hosting provider with a free tier.
+
+### Educational Resources
+
 - [USGS](https://www.usgs.gov/) - The United States Geological Survey.
 - [USGS API](https://waterservices.usgs.gov/rest/IV-Service.html) - The USGS Instantaneous Values Web Service.
 - [USGS API Documentation](https://help.waterdata.usgs.gov/faq/automated-retrievals) - The USGS Instantaneous Values Web Service Documentation.
 - [USGS Site Web Service](https://waterservices.usgs.gov/rest/Site-Service.html) - The USGS Site Web Service.
 - [Codes and Parameters](https://help.waterdata.usgs.gov/codes-and-parameters) - The USGS Codes and Parameters Documentation.
-- [Deploying Django](https://docs.djangoproject.com/en/3.2/howto/deployment/) - 
-- [Django Settings](https://docs.djangoproject.com/en/3.2/ref/settings/)
-- [Running the Django server](https://docs.djangoproject.com/en/3.2/intro/tutorial01/#the-development-server)
-- [Creating Virtual Environments](https://docs.python.org/3/tutorial/venv.html)
-- [Activating a virtual environment](https://docs.python.org/3/tutorial/venv.html#creating-virtual-environments)
-- [Installing Packages](https://packaging.python.org/tutorials/installing-packages/)
-- [Requirements Files](https://pip.pypa.io/en/stable/user_guide/#requirements-files)
+- [How to Get Real-time Flood Data from the USGS API](https://medium.com/@protobioengineering/how-to-get-real-time-river-data-from-the-usgs-api-25264da3b362) - A tutorial on how to get real-time flood data from the USGS API.
+- [USGS Client Library](kapadia.github.io/usgs/) - Client library for interfacing with USGS datasets (GitHub repository).
+- [USGS Client Library Repository](https://github.com/kapadia/usgs) - Client library for interfacing with USGS datasets.
+- [USGS API Homepage](https://www.usgs.gov/products/web-tools/apis) - The USGS API Homepage.
+- [USGS Rest API web services](https://waterservices.usgs.gov/rest/) - The USGS Rest API web services.
+- [USGS Instantaneous Water Service data URL generator](https://waterservices.usgs.gov/rest/IV-Test-Tool.html) - The USGS Instantaneous Water Service data URL generator.
+- [National Water Dashboard](https://dashboard.waterdata.usgs.gov/app/nwd/en/?region=lower48&aoi=default) - The National Water Dashboard.
+- [Rivers vs. Streams vs. Creeks (USGS)](https://www.usgs.gov/special-topics/water-science-school/science/rivers-streams-and-creeks) - A USGS article on the difference between rivers, streams, and creeks.
+- [How to Make Colored Country Maps with GeoPandas and Python](https://medium.com/@protobioengineering/how-to-make-colored-country-maps-in-python-tldr-edition-d58147105a8d) - A tutorial on how to make colored country maps with GeoPandas and Python.
+- [5 Ways to Use Free Data on the Internet for Science](https://medium.com/@protobioengineering/5-ways-to-use-free-data-on-the-internet-for-science-e0661684f397) - A tutorial on how to use free data on the internet for science.
+- [GitHub for Biologists](https://medium.com/@protobioengineering/github-for-biologists-407fab350083) - A tutorial on how to use GitHub for biologists.
 
 ## License
 
