@@ -373,6 +373,9 @@ Below are some external resources I found helpful when creating **River Charts**
 - [Requirements Files](https://pip.pypa.io/en/stable/user_guide/#requirements-files) - A file containing a list of items to be installed using pip install like so: `pip install -r requirements.txt`.
 - [PythonAnywhere](https://www.pythonanywhere.com/) - A Python hosting provider with a free tier.
 
+> [!NOTE]
+> To use external API's (like this application does), PythonAnywhere requires a basic paid tier.
+
 ### Educational Resources
 
 - [USGS](https://www.usgs.gov/) - The United States Geological Survey.
