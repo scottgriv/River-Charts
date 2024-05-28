@@ -84,7 +84,7 @@ Below is the key to use when viewing the plots on the graph for Float dates:
 | Red           | ![#FF0000](https://via.placeholder.com/10/FF0000?text=+) `#FF0000` | Did (Met up, but did not Float)         |
 | Orange        | ![#FFA500](https://via.placeholder.com/10/FFA500?text=+) `#FFA500` | Skipped (Skipped the event altogether)  |
 
-> ![NOTE]
+> [!NOTE]
 > The closest river gauge to our float location is the [Susquehanna River at Meshoppen, PA](https://waterdata.usgs.gov/nwis/uv?01533400), which is the default site code in the application. 
 > You can change the site code in the application `config.py` file to visualize data for a different river/site code.
 
