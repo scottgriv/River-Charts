@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.1] - 2024-05-28
+
+### Added
+
+- The ability to use static data in the `demo.json` file, vs. making `API` calls (snapshot vs. live).
+- `END_DATE` and `TIME_ZONE` configuration variables.
+
+### Changed
+
+- The "Gage Height Last Updated" timestamp from the last date retrieved from the sample data vs. the current datetime.
+- README to cover the above additions.
+
 ## [1.1.1] - 2024-04-28
 
 ### Fixed

@@ -22,9 +22,12 @@ function renderGraph() {
         $("#station-name")
           .text(data.station_name)
           .show();
-        $("#timestamp")
-          .text("Last Updated: " + getCurrentTimestamp())
-          .show();
+        if (data.last_date_time && data.last_date_time !== "N/A") {
+            var lastUpdated = new Date(data.last_date_time).toLocaleString();
+            $("#timestamp").text("Gage Height Last Updated: " + lastUpdated).show();
+        } else {
+            $("#timestamp").text("Gage Height Last Updated: " + getCurrentTimestamp()).show();
+        }
         $("header h1")
           .html('RIVER <span class="title-highlight">CHARTS</span>')
           .show();

@@ -75,10 +75,18 @@
 ## Background Story
 
 Every year, my friends and I float 2 miles down the **Susquehanna River** in **NEPA** on river tubes (a 2 hour float). I wanted to create a web application that would allow us to visualize past river data in order to see the river height on the days we floated down the river. Some float dates, we still got together, but we didn't float due to the dangerous river levels. 
-<span style="color:green"><b>Green</b></span> plots on the graph represent the dates we did float (with a "Floated" status of "Yes"), and 
-<span style="color:red"><b>Red</b></span> plots represent the dates we did not float (with a "Floated" status of "No").
 
-*The closest river gauge to our float location is the [Susquehanna River at Meshoppen, PA](https://waterdata.usgs.gov/nwis/uv?01533400), which is the default site code in the application. You can change the site code in the application to visualize data for a different river.*
+Below is the key to use when viewing the plots on the graph for Float dates:
+
+| Color         | Hex                                                                | Floated Status                          |
+| ------------- | ------------------------------------------------------------------ | --------------------------------------- |
+| Green         | ![#008000](https://via.placeholder.com/10/008000?text=+) `#008000` | Yes (Met up and did Float)              |
+| Red           | ![#FF0000](https://via.placeholder.com/10/FF0000?text=+) `#FF0000` | Did (Met up, but did not Float)         |
+| Orange        | ![#FFA500](https://via.placeholder.com/10/FFA500?text=+) `#FFA500` | Skipped (Skipped the event altogether)  |
+
+> ![NOTE]
+> The closest river gauge to our float location is the [Susquehanna River at Meshoppen, PA](https://waterdata.usgs.gov/nwis/uv?01533400), which is the default site code in the application. 
+> You can change the site code in the application `config.py` file to visualize data for a different river/site code.
 
 <div align="center">
     <a href="https://pawilds.com/journey/west-branch-susquehanna" target="_blank">
@@ -129,6 +137,10 @@ This project makes use of several libraries and frameworks:
     - [USGS API Documentation](https://help.waterdata.usgs.gov/faq/automated-retrievals)
 - Toggle `USE_DUMMY_DATA` to `True` in `config.py` to use dummy data instead of the `API`.
     - This is useful for testing the application without making `API` calls.
+- Toggle `USE_DEMO_DATA` to `True` in `config.py` to use demo/static data instead of the `API`.
+    - This is useful for avoiding `API` calls and using a static data set in the `data/demo.json` file.
+    - You will need to populate the file with `JSON` by calling the "Historical River Levels" `API` call in `Postman`, included in this project (`docs/api/River Charts.postman_collection.json`); see [Calling the API](#calling-the-api) below for more information.
+    - Your app will esentially be a snapshot, and not live updates using this method, but it can be helpful if you want to avoid server costs making `API` calls.
 - The float data plots are driven from a `.csv` file located in `static/data/river_charts.csv`.
     - This file can be edited to add/remove float dates.
     - The file is read in `views.py` and passed to the template as a `context` variable.
@@ -197,42 +209,55 @@ Now, you can visit `http://127.0.0.1:8000/` in your browser to access the applic
 Below is a list of the main files and folders in this repository and their specific purposes:
 ```bash
 River-Charts # Root folder
-├─ config.py # A file that contains sensitive information (excluded from this repository).
-├─ manage.py # A command-line utility that lets you interact with this Django project in various ways.
-├─ requirements.txt # A list of Python packages required to run this project.
-├─ River_Charts # A directory for the river_charts app.
-│   ├─ __init__.py # An empty file that tells Python that this directory should be considered a Python package.
-│   ├─ admin.py # A file that registers models to be displayed in the Django admin site.
-│   ├─ apps.py # A file that contains the application configuration.
-│   ├─ models.py # A file that contains the database models.
-│   ├─ tests.py # A file that contains the tests for the application.
-│   ├─ urls.py # A file that contains the URL declarations for the application.
-│   └─ views.py # A file that contains the application logic.
-├─ river_charts # The Django project directory.
+├─ .github # GitHub related files such as CHANGELOG, CREDITS, etc.
+├─ docs # Included resources.
+│   ├─ api # API resources.
+│   │   └─ River Charts.postman_collection.json # A Postman Collection used to manually call the API, and to gather data if you want to use this as a static site.
+│   ├─ assets # Misc. resources.
+│   │   └─ stage versus flow slide.pdf # A PDF file that explains stage vs. flow slide.
+│   └─ images # Image resources.
+├─ River_Charts # The Django project directory.
 │   ├─ __init__.py # An empty file that tells Python that this directory should be considered a Python package.
 │   ├─ asgi.py # An entry-point for ASGI-compatible web servers to serve your project.
 │   ├─ settings.py # Settings/configuration for this Django project.
 │   ├─ urls.py # The URL declarations for this Django project.
 │   └─ wsgi.py # An entry-point for WSGI-compatible web servers to serve your project.
+├─ rivercharts # A directory for the rivercharts app.
+│   ├─ data # A directory for static JSON data.
+│   │    ├─ demo.json # A JSON file used for static data when USE_DEMO_DATA is set to True in config.py.
+│   ├─ templates # A directory for HTML templates.
+│   │    ├─ rivercharts # A directory for HTML templates specific to the river_charts app.
+│   │    ├─ error.html # An HTML template that displays an error message.
+│   │    └─ index.html # An HTML template that displays the application.
+│   ├─ __init__.py # An empty file that tells Python that this directory should be considered a Python package.
+│   ├─ admin.py # A file that registers models to be displayed in the Django admin site.
+│   ├─ apps.py # A file that contains the application configuration.
+│   ├─ config.py # A file that contains sensitive information (excluded from this repository).
+│   ├─ models.py # A file that contains the database models.
+│   ├─ tests.py # A file that contains the tests for the application.
+│   ├─ urls.py # A file that contains the URL declarations for the application.
+│   └─ views.py # A file that contains the application logic.
 ├─ static # A directory for static files that are used in this Django project.
+│   ├─ assets # A directory images used throughout the application.
 │   ├─ css # A directory for CSS files.
 │   │   └─ styles.css # A CSS file that contains the styles for the application.
 │   ├─ data # A directory for data files.
 │   │   └─ river_charts.csv # A CSV file that contains the float dates for the application.
-│   └─ images # A directory for image files.
-├─ templates # A directory for HTML templates.
-│   └─ river_charts # A directory for HTML templates specific to the river_charts app.
-│       ├─ error.html # An HTML template that displays an error message.
-│       └─ index.html # An HTML template that displays the application.
-├─ views.py # A file that contains the application logic.
+│   ├─ fonts # A directory fonts used throughout the application.
+│   └─ js # A directory for JavaScript files.
+│       └─ script.js # The JavaScript file used to render the loading screen. 
+├─ requirements.txt # A list of Python packages required to run this project.
+├─ db.sqllite3 # A database file Django uses for this project (Do not delete).
+├─ manage.py # A command-line utility that lets you interact with this Django project in various ways.
 ├─ .github # GitHub folder
 ├─ .gitignore # Git ignore file
 ├─ .gitattributes # Git attributes file
 ├─ PRG.md # PRG Connection File
 ├─ LICENSE # A file that contains the license for this project.
+├─ VERSION # A file used to keep the repository release and the PythonAnywhere deployment in sync.
 └─ README.md # This file.
-
 ```
+
 ## API Documentation
 
 Below is the documentation for the `API` used in this application.
@@ -241,7 +266,7 @@ Below is the documentation for the `API` used in this application.
 
 To call the `API` and retrieve the data:
 
-1. Make a GET request to: `http://nwis.waterservices.usgs.gov/nwis/...` (based on your requirements).
+1. Make a `GET` request to: `http://nwis.waterservices.usgs.gov/nwis/...` (based on your requirements).
     - ex. `https://waterservices.usgs.gov/nwis/iv?format=json&sites=01533400&startDT=2015-07-01&endDT=2023-08-16&parameterCd=00065&siteStatus=active&siteType=ST`
 2. Pass the necessary parameters in the request.
     - ex.
