@@ -1,7 +1,8 @@
 # Config file for the rivercharts application
 
 # Variables that will be used in the views.py file
-USE_DUMMY_DATA = False  # Set this flag to False when you want to use the real API (False is the default)
+USE_DUMMY_DATA = False  # Set this flag to False when you want to use the real API vs. using Dummy Static Data (False is the default)
+USE_DEMO_DATA = True  # Set this flag to False when you want to use the real API vs. Demo Static Data via the demo/demo.json file (Manual Data Entry) (False is the default)
 SITE_CODE = "01533400" # Site Code: Susquehanna River at Meshoppen, PA
 PARAMETER_CODE = "00065" # Parameter Code: Gage height, ft
 START_DATE = "2015-07-01" # Replace this with how you determine your start date

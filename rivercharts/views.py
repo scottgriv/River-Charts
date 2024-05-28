@@ -5,6 +5,7 @@ import os
 import requests
 import math
 import pytz
+import json
 import pandas as pd
 import plotly.graph_objs as go
 import plotly.express as px
@@ -13,10 +14,11 @@ from datetime import datetime, timedelta
 from django.shortcuts import render
 from django.shortcuts import redirect
 from django.http import JsonResponse
-from .config import USE_DUMMY_DATA, SITE_CODE, PARAMETER_CODE, START_DATE, API_URL, STATION_NAME, REQUEST_TIMEOUT_SECONDS
+from .config import USE_DUMMY_DATA, USE_DEMO_DATA, SITE_CODE, PARAMETER_CODE, START_DATE, API_URL, STATION_NAME, REQUEST_TIMEOUT_SECONDS
 
 # These are the config variables from config.py
 config_use_dummy_data = USE_DUMMY_DATA
+config_use_demo_data = USE_DEMO_DATA
 config_site_code = SITE_CODE
 config_parameter_code = PARAMETER_CODE
 config_start_date = START_DATE
@@ -71,9 +73,20 @@ def river_graph_data(request):
         "siteType": "ST",
     }
 
+    # Path to the JSON file
+    json_file_path = os.path.join(os.path.dirname(__file__), 'data', 'demo.json')
+
+    # Function to load JSON data
+    def load_json_data(file_path):
+        with open(file_path, 'r') as file:
+            return json.load(file)
+
+
     # Use dummy data if the config variable is set to True
     if config_use_dummy_data:
         data = dummy_data
+    elif config_use_demo_data:
+        data = load_json_data(json_file_path)
     # Otherwise, make the request to the API
     else:
         try:
