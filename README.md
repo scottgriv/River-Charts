@@ -85,7 +85,7 @@ Below is the key to use when viewing the plots on the graph for Float dates:
 | Orange        | ![#FFA500](https://via.placeholder.com/10/FFA500?text=+) `#FFA500` | Skipped (Skipped the event altogether)  |
 
 > [!NOTE]
-> The closest river gauge to our float location is the [Susquehanna River at Meshoppen, PA](https://waterdata.usgs.gov/nwis/uv?01533400), which is the default site code in the application. 
+> The closest river gage to our float location is the [Susquehanna River at Meshoppen, PA](https://waterdata.usgs.gov/nwis/uv?01533400), which is the default site code in the application. 
 > You can change the site code in the application `config.py` file to visualize data for a different river/site code.
 
 <div align="center">
@@ -419,6 +419,7 @@ Below are some external resources I found helpful when creating **River Charts**
 - [How to Make Colored Country Maps with GeoPandas and Python](https://medium.com/@protobioengineering/how-to-make-colored-country-maps-in-python-tldr-edition-d58147105a8d) - A tutorial on how to make colored country maps with GeoPandas and Python.
 - [5 Ways to Use Free Data on the Internet for Science](https://medium.com/@protobioengineering/5-ways-to-use-free-data-on-the-internet-for-science-e0661684f397) - A tutorial on how to use free data on the internet for science.
 - [GitHub for Biologists](https://medium.com/@protobioengineering/github-for-biologists-407fab350083) - A tutorial on how to use GitHub for biologists.
+- [Why does the USGS use the spelling "gage" instead of "gauge"?](https://www.usgs.gov/faqs/why-does-usgs-use-spelling-gage-instead-gauge#:~:text=Newell%20is%20purported%20to%20be,influence%20added%20a%20'u') - Fun nerd fact. 
 
 ## License
 
