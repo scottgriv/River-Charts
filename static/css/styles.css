@@ -99,7 +99,7 @@ p {
     height: 0;
   }
   100% {
-    height: calc(150px + 75%); /* Used to be 90% - Issue #2 */
+    height: calc(110px + 75%) /* Used to be 90% or calc(150px + 75%) - Issue #2 */
   }
 }
 
@@ -164,7 +164,7 @@ p {
   color: var(--tube-orange-color);
   font-size: 24px;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
   position: relative;
   z-index: 3;
   order: 1;
@@ -174,7 +174,7 @@ p {
   font-family: var(--main-font-family);
   color: var(--tube-orange-color);
   font-size: 18px;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   position: relative;
   z-index: 3;
@@ -195,7 +195,7 @@ p {
   color: var(--tube-orange-color);
   font-size: 24px;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
   position: relative;
   z-index: 3;
   order: 4;
@@ -206,7 +206,7 @@ p {
   color: var(--tube-orange-color);
   font-size: 18px;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   position: relative;
   z-index: 3;
   order: 5;
@@ -214,6 +214,17 @@ p {
   overflow: hidden;
   white-space: wrap;
   text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 600px) { 
+  .loading-image {
+    z-index: 3;
+    background: url("/static/assets/loading_tube.png") no-repeat center center;
+    width: 335px;
+    height: 335px;
+    animation: rotateBackAndForth 1s infinite;
+    order: 3;
+  }
 }
 
 .loading-dots::after {
