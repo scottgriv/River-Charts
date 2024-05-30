@@ -114,6 +114,7 @@ Here are some definitions to help you understand the terminology used in this do
     - [USGS](https://www.usgs.gov/)
 - <ins><b>Gage Height</b></ins>: The height of the water surface above the gage datum (zero point). Gage height is often used interchangeably with the more general term, stage, although gage height is more appropriate when used with a gage reading. Stage is more appropriate when used with a recorded or calculated gage height.
     - [Gage Height](https://waterdata.usgs.gov/blog/gage_height/)
+    - [Why does the USGS use the spelling "gage" instead of "gauge"?](https://www.usgs.gov/faqs/why-does-usgs-use-spelling-gage-instead-gauge#:~:text=Newell%20is%20purported%20to%20be,influence%20added%20a%20'u')
 
 ## Getting Started
 
@@ -417,9 +418,8 @@ Below are some external resources I found helpful when creating **River Charts**
 - [Rivers vs. Streams vs. Creeks (USGS)](https://www.usgs.gov/special-topics/water-science-school/science/rivers-streams-and-creeks) - A USGS article on the difference between rivers, streams, and creeks.
 - [How to Make Colored Country Maps with GeoPandas and Python](https://medium.com/@protobioengineering/how-to-make-colored-country-maps-in-python-tldr-edition-d58147105a8d) - A tutorial on how to make colored country maps with GeoPandas and Python.
 - [5 Ways to Use Free Data on the Internet for Science](https://medium.com/@protobioengineering/5-ways-to-use-free-data-on-the-internet-for-science-e0661684f397) - A tutorial on how to use free data on the internet for science.
-- [GitHub for Biologists](https://medium.com/@protobioengineering/github-for-biologists-407fab350083) - A tutorial on how to use GitHub for biologists.
-- [Why does the USGS use the spelling "gage" instead of "gauge"?](https://www.usgs.gov/faqs/why-does-usgs-use-spelling-gage-instead-gauge#:~:text=Newell%20is%20purported%20to%20be,influence%20added%20a%20'u') - Fun nerd fact. 
-
+- [GitHub for Biologists](https://medium.com/@protobioengineering/github-for-biologists-407fab350083) - A tutorial on how to use GitHub for biologists. 
+- [Why does the USGS use the spelling "gage" instead of "gauge"?](https://www.usgs.gov/faqs/why-does-usgs-use-spelling-gage-instead-gauge#:~:text=Newell%20is%20purported%20to%20be,influence%20added%20a%20'u') - Fun nerd fact.
 
 ## License
 
