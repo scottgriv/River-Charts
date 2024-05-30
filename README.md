@@ -24,9 +24,7 @@
     - The data is captured by the USGS using a [gage height](#gage-height) sensor every 15 minutes.
 - The data is updated with the most recent river height data every time the application is loaded.
     - Please be patient, the loading time of the application is around 60+ seconds (depending on your internet connection), due to the large `API` `JSON` response and the amount of data being processed from the USGS.
-        - As a future enhancement (or if you want to fork/develop it), I'd like to cache the data on the server, or store it in a database with a scheduled data refresh.
-        - I'd also like to investigate using Websockets for real time updates.
-        - This will allow the removal of the loading/skeleton screen for the initial load/wait time due to the API request that is sent out during every page visit/load.
+- The loading screen screen contains fun wave and tube graphics as well as 20 "Fun Facts" regarding Tubing and Rivers on a 7 second interval to keep the user occupied while the data is loading in the background. 
 - I recommend using the application on a desktop since the chart is interactive has a wider view, but it can be used on a mobile device as well.
 - Visit the application [here](https://www.rivercharts.app).
 
@@ -242,6 +240,7 @@ River-Charts # Root folder
 │   ├─ css # A directory for CSS files.
 │   │   └─ styles.css # A CSS file that contains the styles for the application.
 │   ├─ data # A directory for data files.
+│   │   ├─ fun_facts.json # A JSON file used to display Fun Facts while the application is loading, add or remove more facts here.
 │   │   └─ river_charts.csv # A CSV file that contains the float dates for the application.
 │   ├─ fonts # A directory fonts used throughout the application.
 │   └─ js # A directory for JavaScript files.
@@ -420,6 +419,7 @@ Below are some external resources I found helpful when creating **River Charts**
 - [5 Ways to Use Free Data on the Internet for Science](https://medium.com/@protobioengineering/5-ways-to-use-free-data-on-the-internet-for-science-e0661684f397) - A tutorial on how to use free data on the internet for science.
 - [GitHub for Biologists](https://medium.com/@protobioengineering/github-for-biologists-407fab350083) - A tutorial on how to use GitHub for biologists.
 - [Why does the USGS use the spelling "gage" instead of "gauge"?](https://www.usgs.gov/faqs/why-does-usgs-use-spelling-gage-instead-gauge#:~:text=Newell%20is%20purported%20to%20be,influence%20added%20a%20'u') - Fun nerd fact. 
+
 
 ## License
 

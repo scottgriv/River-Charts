@@ -22,11 +22,11 @@ function renderGraph() {
         $("#station-name")
           .text(data.station_name)
           .show();
-        if (data.last_date_time && data.last_date_time !== "N/A") {
+        if (data.last_date_time && data.last_date_time !== "N/A") { // Optionally, you can utilize data.first_date_time as well
             var lastUpdated = new Date(data.last_date_time).toLocaleString();
-            $("#timestamp").text("Gage Height Last Updated: " + lastUpdated).show();
+            $("#timestamp").text("Gage Height Updated: " + lastUpdated).show();
         } else {
-            $("#timestamp").text("Gage Height Last Updated: " + getCurrentTimestamp()).show();
+            $("#timestamp").text("Gage Height Updated: " + getCurrentTimestamp()).show();
         }
         $("header h1")
           .html('RIVER <span class="title-highlight">CHARTS</span>')

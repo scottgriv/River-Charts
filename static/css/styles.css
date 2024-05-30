@@ -139,15 +139,6 @@ p {
   }
 }
 
-.loading-image {
-  z-index: 3;
-  background: url("/static/assets/loading_tube.png") no-repeat center center;
-  width: 400px;
-  height: 400px;
-  animation: rotateBackAndForth 1s infinite;
-  order: 1;
-}
-
 /* Loading Styles (Loading Text) */
 @keyframes loadingDots {
   0%,
@@ -176,18 +167,53 @@ p {
   margin-top: 20px;
   position: relative;
   z-index: 3;
-  order: 2;
+  order: 1;
 }
 
 .loading-text-timing {
   font-family: var(--main-font-family);
   color: var(--tube-orange-color);
   font-size: 18px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  order: 2;
+}
+
+.loading-image {
+  z-index: 3;
+  background: url("/static/assets/loading_tube.png") no-repeat center center;
+  width: 400px;
+  height: 400px;
+  animation: rotateBackAndForth 1s infinite;
+  order: 3;
+}
+
+.fun-facts-title {
+  font-family: var(--main-font-family);
+  color: var(--tube-orange-color);
+  font-size: 24px;
   text-align: center;
   margin-top: 20px;
   position: relative;
   z-index: 3;
-  order: 3;
+  order: 4;
+}
+
+.fun-facts {
+  font-family: var(--main-font-family);
+  color: var(--tube-orange-color);
+  font-size: 18px;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  z-index: 3;
+  order: 5;
+  height: 40px; /* Adjust the height as needed */
+  overflow: hidden;
+  white-space: wrap;
+  text-overflow: ellipsis;
 }
 
 .loading-dots::after {

@@ -119,7 +119,7 @@ def river_graph_data(request):
 
     # Create a list of dictionaries to store the data
     data_list = []
-    for entry in values:
+    for i, entry in enumerate(values):
         # date_time = datetime.strptime(entry['dateTime'], "%Y-%m-%dT%H:%M:%S.%f%z").strftime('%B %d, %Y %I:%M:%S %p EST')
         # Step 1: Parse the datetime with the time zone information
         parsed_date_time = datetime.strptime(entry['dateTime'], "%Y-%m-%dT%H:%M:%S.%f%z")
@@ -133,6 +133,9 @@ def river_graph_data(request):
             'River Level': float(entry['value']),
             'Date': datetime.strptime(entry['dateTime'], "%Y-%m-%dT%H:%M:%S.%f%z").strftime('%B %d, %Y %I:%M:%S %p EST')
         })
+
+        if i == 0:
+            first_date_time = formatted_date_time
         last_date_time = formatted_date_time  # Update last_date_time to the most recent entry
 
     # Create a dataframe from the list of dictionaries
@@ -265,4 +268,4 @@ def river_graph_data(request):
     graph_div = fig.to_html(full_html=True)
 
     # Return the plot as JSON
-    return JsonResponse({'graph_div': graph_div, 'station_name': config_station_name, 'last_date_time': last_date_time})
+    return JsonResponse({'graph_div': graph_div, 'station_name': config_station_name, 'first_date_time': first_date_time, 'last_date_time': last_date_time})

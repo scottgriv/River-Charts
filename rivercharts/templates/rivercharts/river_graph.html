@@ -38,6 +38,34 @@
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="/static/js/script.js"></script>
+    <script>
+      $(document).ready(function() {
+          // Fetch fun facts from the JSON file and display them
+          $.getJSON("{% static 'data/fun_facts.json' %}", function(data) {
+              var facts = data;
+              var displayedFacts = [];
+              
+              function displayRandomFact() {
+                  if (displayedFacts.length === facts.length) {
+                      displayedFacts = [];
+                  }
+   
+                  var availableFacts = facts.filter(function(fact) {
+                      return !displayedFacts.includes(fact);
+                  });
+   
+                  var randomFact = availableFacts[Math.floor(Math.random() * availableFacts.length)];
+                  displayedFacts.push(randomFact);
+                  
+                  $('#fun-facts').text(randomFact);
+              }
+   
+              // Display a random fact every 7 seconds
+              displayRandomFact();
+              setInterval(displayRandomFact, 7000);
+          });
+      });
+   </script>   
   </head>
   <body>
     <!-- Header -->
@@ -57,13 +85,17 @@
 
     <!-- This div will display the loading indicator and then get replaced by the graph -->
     <div id="loading-indicator">
-      <div class="loading-image"></div>
       <div class="loading-text">
         Loading Chart. Please Wait<span class="loading-dots"></span>
       </div>
       <div class="loading-text-timing">
         This may take up to 60+ seconds due to the large data set from the USGS.
       </div>
+      <div class="loading-image"></div>
+      <div class="fun-facts-title">
+        Care to learn some fun facts while you wait?
+      </div>
+      <div id="fun-facts" class="fun-facts"></div>
       <div class="wave"></div>
     </div>
 
