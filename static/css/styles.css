@@ -40,14 +40,14 @@ h1,
 h2,
 p,
 #station-name,
-#timestamp {
+#timestamp, #last-river-level {
   margin: 0;
   padding: 0;
 }
 
 h1,
 h2,
-#timestamp {
+#timestamp, #last-river-level {
   text-align: center;
   width: 100%;
 }
@@ -100,6 +100,7 @@ p {
   }
   100% {
     height: calc(110px + 75%) /* Used to be 90% or calc(150px + 75%) - Issue #2 */
+    /* height: calc(110px + 75%) */
   }
 }
 
@@ -210,7 +211,7 @@ p {
   position: relative;
   z-index: 3;
   order: 5;
-  height: 40px; /* Adjust the height as needed */
+  height: 60px; /* Adjust the height as needed */
   overflow: hidden;
   white-space: wrap;
   text-overflow: ellipsis;
@@ -262,8 +263,8 @@ header {
 }
 
 #station-name,
-#timestamp {
-  font-size: 1rem;
+#timestamp, #last-river-level {
+  font-size: 0.85rem;
   font-family: var(--main-font-family);
 }
 

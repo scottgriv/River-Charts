@@ -49,6 +49,7 @@ dummy_data = {
 CSV_FILE_PATH = os.path.join(settings.BASE_DIR, 'static', 'data', 'river_charts.csv')
 FLOAT_DATA = pd.read_csv(CSV_FILE_PATH)
 FLOAT_DATA['Date'] = pd.to_datetime(FLOAT_DATA['Date'], format='%m-%d-%Y')
+json_file_path = os.path.join(settings.BASE_DIR, 'static', 'data', 'demo.json')
 
 # This is the view that will be called when the page is first loaded
 def river_graph_initial(request):
@@ -77,8 +78,8 @@ def river_graph_data(request):
     }
 
     # Path to the JSON file
-    json_file_path = os.path.join(os.path.dirname(__file__), 'data', 'demo.json')
-
+    # json_file_path = os.path.join(os.path.dirname(__file__), 'data', 'demo.json')
+    
     # Function to load JSON data
     def load_json_data(file_path):
         with open(file_path, 'r') as file:
@@ -137,6 +138,7 @@ def river_graph_data(request):
         if i == 0:
             first_date_time = formatted_date_time
         last_date_time = formatted_date_time  # Update last_date_time to the most recent entry
+        last_river_level = float(entry['value'])  # Update last_river_level to the most recent entry
 
     # Create a dataframe from the list of dictionaries
     df = pd.DataFrame(data_list)
@@ -268,4 +270,4 @@ def river_graph_data(request):
     graph_div = fig.to_html(full_html=True)
 
     # Return the plot as JSON
-    return JsonResponse({'graph_div': graph_div, 'station_name': config_station_name, 'first_date_time': first_date_time, 'last_date_time': last_date_time})
+    return JsonResponse({'graph_div': graph_div, 'station_name': config_station_name, 'first_date_time': first_date_time, 'last_date_time': last_date_time, 'last_river_level': last_river_level})

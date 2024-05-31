@@ -222,8 +222,6 @@ River-Charts # Root folder
 │   ├─ urls.py # The URL declarations for this Django project.
 │   └─ wsgi.py # An entry-point for WSGI-compatible web servers to serve your project.
 ├─ rivercharts # A directory for the rivercharts app.
-│   ├─ data # A directory for static JSON data.
-│   │    ├─ demo.json # A JSON file used for static data when USE_DEMO_DATA is set to True in config.py.
 │   ├─ templates # A directory for HTML templates.
 │   │    ├─ rivercharts # A directory for HTML templates specific to the river_charts app.
 │   │    ├─ error.html # An HTML template that displays an error message.
@@ -242,6 +240,7 @@ River-Charts # Root folder
 │   │   └─ styles.css # A CSS file that contains the styles for the application.
 │   ├─ data # A directory for data files.
 │   │   ├─ fun_facts.json # A JSON file used to display Fun Facts while the application is loading, add or remove more facts here.
+│   │   ├─ demo.json # A JSON file used for static data when USE_DEMO_DATA is set to True in config.py.
 │   │   └─ river_charts.csv # A CSV file that contains the float dates for the application.
 │   ├─ fonts # A directory fonts used throughout the application.
 │   └─ js # A directory for JavaScript files.

@@ -28,6 +28,9 @@ function renderGraph() {
         } else {
             $("#timestamp").text("Gage Height Updated: " + getCurrentTimestamp()).show();
         }
+        $("#last-river-level")
+        .text("Last River Level: " + data.last_river_level + " ft")
+        .show();
         $("header h1")
           .html('RIVER <span class="title-highlight">CHARTS</span>')
           .show();
