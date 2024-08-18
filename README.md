@@ -1,6 +1,6 @@
 <!-- Begin README -->
 
-[![App Logo](./docs/images/banner_large.png)](https://www.rivercharts.app)
+[![App Logo](./docs/images/banner_large.png)](https://scottgriv.pythonanywhere.com/)
 
 <p align="center">
     <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.10.13-3776AB?style=for-the-badge&logo=python" alt="Python Badge" /></a>
@@ -26,7 +26,7 @@
     - Please be patient, the loading time of the application is around 60+ seconds (depending on your internet connection), due to the large `API` `JSON` response and the amount of data being processed from the USGS.
 - The loading screen screen contains fun wave and tube graphics as well as 20 "Fun Facts" regarding Tubing and Rivers on a 7 second interval to keep the user occupied while the data is loading in the background. 
 - I recommend using the application on a desktop since the chart is interactive has a wider view, but it can be used on a mobile device as well.
-- Visit the application [here](https://www.rivercharts.app).
+- Visit the application [here](https://scottgriv.pythonanywhere.com/).
 
 <div align="center">
   <img src="./docs/images/demo_1.gif" alt="Demo_1" style="width: 80%; margin: 5px;">
@@ -193,7 +193,7 @@ Now, you can visit `http://127.0.0.1:8000/` in your browser to access the applic
 
 ### Deployment
 
-- The application is hosted [here](https://www.rivercharts.app) on [PythonAnywhere](https://www.pythonanywhere.com/).
+- The application is hosted [here](https://scottgriv.pythonanywhere.com/) on [PythonAnywhere](https://www.pythonanywhere.com/).
 - The application is deployed using a `WSGI` configuration file.
     - [WSGI Configuration](https://docs.djangoproject.com/en/3.2/howto/deployment/wsgi/)
 - First, make sure you adjust your `settings.py` file `ALLOWED_HOSTS` to include your deployment host.

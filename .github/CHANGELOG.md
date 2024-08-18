@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.2.2] - 2024-08-18
+
+### Removed
+
+- Custom domain name from endpoint.
+
 ## [2.2.1] - 2024-06-26
 
 ### Fixed
@@ -66,7 +72,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added this changelog file :D.
 - Initial Release of River Charts.
 
-[2.2.1]: https://github.com/scottgriv/River-Charts/compare/v2.1.0..v2.2.1
+[2.2.2]: https://github.com/scottgriv/River-Charts/compare/v2.2.1..v2.2.2
+[2.2.1]: https://github.com/scottgriv/River-Charts/compare/v2.2.0..v2.2.1
 [2.2.0]: https://github.com/scottgriv/River-Charts/compare/v2.1.0..v2.2.0
 [2.1.0]: https://github.com/scottgriv/River-Charts/compare/v2.0.0..v2.1.0
 [2.0.0]: https://github.com/scottgriv/River-Charts/compare/v1.1.1...v2.0.0
