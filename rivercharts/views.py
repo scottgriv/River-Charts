@@ -15,11 +15,11 @@ from datetime import datetime, timedelta
 from django.shortcuts import render
 from django.shortcuts import redirect
 from django.http import JsonResponse
-from .config import USE_DUMMY_DATA, USE_DEMO_DATA, SITE_CODE, PARAMETER_CODE, START_DATE, END_DATE, TIME_ZONE, API_URL, STATION_NAME, REQUEST_TIMEOUT_SECONDS
+from .config import USE_DUMMY_DATA, USE_SNAPSHOT_DATA, SITE_CODE, PARAMETER_CODE, START_DATE, END_DATE, TIME_ZONE, API_URL, STATION_NAME, REQUEST_TIMEOUT_SECONDS
 
 # These are the config variables from config.py
 config_use_dummy_data = USE_DUMMY_DATA
-config_use_demo_data = USE_DEMO_DATA
+config_use_snapshot_data = USE_SNAPSHOT_DATA
 config_site_code = SITE_CODE
 config_parameter_code = PARAMETER_CODE
 config_start_date = START_DATE
@@ -49,7 +49,7 @@ dummy_data = {
 CSV_FILE_PATH = os.path.join(settings.BASE_DIR, 'static', 'data', 'river_charts.csv')
 FLOAT_DATA = pd.read_csv(CSV_FILE_PATH)
 FLOAT_DATA['Date'] = pd.to_datetime(FLOAT_DATA['Date'], format='%m-%d-%Y')
-json_file_path = os.path.join(settings.BASE_DIR, 'static', 'data', 'demo.json')
+json_file_path = os.path.join(settings.BASE_DIR, 'static', 'data', 'snapshot.json')
 
 # This is the view that will be called when the page is first loaded
 def river_graph_initial(request):
@@ -78,7 +78,7 @@ def river_graph_data(request):
     }
 
     # Path to the JSON file
-    # json_file_path = os.path.join(os.path.dirname(__file__), 'data', 'demo.json')
+    # json_file_path = os.path.join(os.path.dirname(__file__), 'data', 'snapshot.json')
     
     # Function to load JSON data
     def load_json_data(file_path):
@@ -89,7 +89,7 @@ def river_graph_data(request):
     # Use dummy data if the config variable is set to True
     if config_use_dummy_data:
         data = dummy_data
-    elif config_use_demo_data:
+    elif config_use_snapshot_data:
         data = load_json_data(json_file_path)
     # Otherwise, make the request to the API
     else:

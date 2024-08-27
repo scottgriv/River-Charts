@@ -99,7 +99,7 @@ p {
     height: 0;
   }
   100% {
-    height: calc(110px + 75%) /* Used to be 90% or calc(150px + 75%) - Issue #2 */
+    height: calc(125px + 75%) /* Used to be 90% or calc(150px + 75%) - Issue #2 */
     /* height: calc(110px + 75%) */
   }
 }

@@ -21,9 +21,10 @@
 
 **River Charts** is a `Python`, `Django`, `Plotly`, and `Pandas` web application that visualizes river data for a specific river/site/location.
 - The line graph is driven by data pulled using an `API` from the [United States Geological Survey (USGS)](https://www.usgs.gov/).
-    - The data is captured by the USGS using a [gage height](#gage-height) sensor every 15 minutes.
+    - The data is captured by the **USGS** using a [gage height](#gage-height) sensor every 15 minutes.
 - The data is updated with the most recent river height data every time the application is loaded.
-    - Please be patient, the loading time of the application is around 60+ seconds (depending on your internet connection), due to the large `API` `JSON` response and the amount of data being processed from the USGS.
+    - Please be patient, the loading time of the application is around 30+ seconds (depending on your internet connection), due to the large `API` `JSON` response and the amount of data being processed from the USGS.
+    - The application can be configured to pull live data in via the `API` or use a static `.json` file to display a snapshot of data.
 - The loading screen screen contains fun wave and tube graphics as well as 20 "Fun Facts" regarding Tubing and Rivers on a 7 second interval to keep the user occupied while the data is loading in the background. 
 - I recommend using the application on a desktop since the chart is interactive has a wider view, but it can be used on a mobile device as well.
 - Visit the application [here](https://scottgriv.pythonanywhere.com/).
@@ -76,11 +77,12 @@ Every year, my friends and I float 2 miles down the **Susquehanna River** in **N
 
 Below is the key to use when viewing the plots on the graph for Float dates:
 
-| Color         | Hex                                                                | Floated Status                          |
-| ------------- | ------------------------------------------------------------------ | --------------------------------------- |
-| Green         | ![#008000](https://via.placeholder.com/10/008000?text=+) `#008000` | Yes (Met up and did Float)              |
-| Red           | ![#FF0000](https://via.placeholder.com/10/FF0000?text=+) `#FF0000` | No (Met up, but did not Float)         |
-| Orange        | ![#FFA500](https://via.placeholder.com/10/FFA500?text=+) `#FFA500` | Skipped (Skipped the event altogether)  |
+| Color         | Hex                                                                | Floated Status                          | Floated Key |
+| ------------- | ------------------------------------------------------------------ | --------------------------------------- | ----------- |
+| Green         | ![#008000](https://via.placeholder.com/10/008000?text=+) `#008000` | Yes (Met up and did Float)              | Y           |
+| Red           | ![#FF0000](https://via.placeholder.com/10/FF0000?text=+) `#FF0000` | No (Met up, but did not Float)          | N           |
+| Orange        | ![#FFA500](https://via.placeholder.com/10/FFA500?text=+) `#FFA500` | Skipped (Skipped the event altogether)  | S           |
+
 
 > [!NOTE]
 > The closest river gage to our float location is the [Susquehanna River at Meshoppen, PA](https://waterdata.usgs.gov/nwis/uv?01533400), which is the default site code in the application. 
@@ -136,8 +138,8 @@ This project makes use of several libraries and frameworks:
     - [USGS API Documentation](https://help.waterdata.usgs.gov/faq/automated-retrievals)
 - Toggle `USE_DUMMY_DATA` to `True` in `config.py` to use dummy data instead of the `API`.
     - This is useful for testing the application without making `API` calls.
-- Toggle `USE_DEMO_DATA` to `True` in `config.py` to use demo/static data instead of the `API`.
-    - This is useful for avoiding `API` calls and using a static data set in the `data/demo.json` file.
+- Toggle `USE_SNAPSHOT_DATA` to `True` in `config.py` to use snapshot/static data instead of the `API`.
+    - This is useful for avoiding `API` calls and using a static data set in the `data/snapshot.json` file.
     - You will need to populate the file with `JSON` by calling the "Historical River Levels" `API` call in `Postman`, included in this project (`docs/api/River Charts.postman_collection.json`); see [Calling the API](#calling-the-api) below for more information.
     - Your app will esentially be a snapshot, and not live updates using this method, but it can be helpful if you want to avoid server costs making `API` calls.
 - The float data plots are driven from a `.csv` file located in `static/data/river_charts.csv`.
@@ -240,7 +242,7 @@ River-Charts # Root folder
 │   │   └─ styles.css # A CSS file that contains the styles for the application.
 │   ├─ data # A directory for data files.
 │   │   ├─ fun_facts.json # A JSON file used to display Fun Facts while the application is loading, add or remove more facts here.
-│   │   ├─ demo.json # A JSON file used for static data when USE_DEMO_DATA is set to True in config.py.
+│   │   ├─ snapshot.json # A JSON file used for static data when USE_SNAPSHOT_DATA is set to True in config.py.
 │   │   └─ river_charts.csv # A CSV file that contains the float dates for the application.
 │   ├─ fonts # A directory fonts used throughout the application.
 │   └─ js # A directory for JavaScript files.
