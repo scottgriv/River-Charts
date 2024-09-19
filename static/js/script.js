@@ -24,7 +24,8 @@ function renderGraph() {
           .show();
         if (data.last_date_time && data.last_date_time !== "N/A") { // Optionally, you can utilize data.first_date_time as well
             var lastUpdated = new Date(data.last_date_time).toLocaleString();
-            $("#timestamp").text("Gage Height Updated: " + lastUpdated).show();
+            var firstUpdated = new Date(data.first_date_time).toLocaleString();
+            $("#timestamp").text("Range: " + firstUpdated + " - " + lastUpdated).show();
         } else {
             $("#timestamp").text("Gage Height Updated: " + getCurrentTimestamp()).show();
         }

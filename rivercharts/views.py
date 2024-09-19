@@ -5,13 +5,12 @@ import os
 import requests
 import math
 import pytz
-from datetime import datetime
+from datetime import datetime, timedelta
 import json
 import pandas as pd
 import plotly.graph_objs as go
 import plotly.express as px
 from django.conf import settings
-from datetime import datetime, timedelta
 from django.shortcuts import render
 from django.shortcuts import redirect
 from django.http import JsonResponse
@@ -170,9 +169,12 @@ def river_graph_data(request):
 
     fig.add_trace(fig_filled)
 
+    # Filter the DataFrame to only include rows within the date range
+    filtered_data = FLOAT_DATA[(FLOAT_DATA['Date'] >= first_date_time) & (FLOAT_DATA['Date'] <= last_date_time)]
+
     # Drawing vertical lines for each float from the CSV data
     # Loop through each row of the FLOAT_DATA to add lines and scatter points
-    for _, row in FLOAT_DATA.iterrows():
+    for _, row in filtered_data.iterrows():
         float_date = row['Date']
         float_number = row['Float']
         floated_status = row['Floated']
@@ -265,6 +267,21 @@ def river_graph_data(request):
                 autosize=True,
                 margin=dict(l=50, r=50, b=bottom_margin_value, t=50, pad=0) # Adjusting the margins
             )
+
+            # Convert 'Date Time' column to datetime format if it's not already
+            data_time_range = pd.to_datetime(df['Date Time'], errors='coerce')  # Convert and coerce errors if any
+
+            # Extract the unique years from the 'Date Time' column
+            unique_years = data_time_range.dt.year.unique()
+
+            # Set the number of ticks to the number of unique years
+            nticks = len(unique_years)
+
+            # Debugging: Print the unique years and number of ticks (optional)
+            # print(f"Unique years: {unique_years}, nticks: {nticks}")
+
+            # Update the layout with dynamic nticks
+            fig.update_xaxes(nticks=nticks)
 
     # Convert the plot to HTML
     graph_div = fig.to_html(full_html=True)
