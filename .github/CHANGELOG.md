@@ -96,8 +96,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added this changelog file :D.
 - Initial Release of River Charts.
 
-[2.4.0]: https://github.com/scottgriv/River-Charts/compare/v2.3.0..2.4.0
-[2.3.0]: https://github.com/scottgriv/River-Charts/compare/v2.2.3..v2.3.0
+[2.4.0]: https://github.com/scottgriv/River-Charts/compare/2.3.0..2.4.0
+[2.3.0]: https://github.com/scottgriv/River-Charts/compare/v2.2.3..2.3.0
 [2.2.3]: https://github.com/scottgriv/River-Charts/compare/v2.2.2..v2.2.3
 [2.2.2]: https://github.com/scottgriv/River-Charts/compare/v2.2.1..v2.2.2
 [2.2.1]: https://github.com/scottgriv/River-Charts/compare/v2.2.0..v2.2.1
