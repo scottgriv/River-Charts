@@ -401,6 +401,8 @@ Below are some external resources I found helpful when creating **River Charts**
 
 > [!NOTE]
 > To use external API's (like this application does), PythonAnywhere requires a basic paid tier.
+> I've opted to host on their free tier, however, that means I can't make external API calls so I locally grab the data then put it in the `static/data` folder as `snapshot.json`.
+> I've included a python script inside the `docs/api` folder, which you can replace the variables to your liking inside the `fetch_river_levels.py` script and run it to get the `snapshot.json` file using the `python fetch_river_levels.py` command in the `api` directory.
 
 ### Educational Resources
 
