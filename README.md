@@ -79,10 +79,9 @@ Below is the key to use when viewing the plots on the graph for Float dates:
 
 | Color         | Hex                                                                | Floated Status                          | Floated Key |
 | ------------- | ------------------------------------------------------------------ | --------------------------------------- | ----------- |
-| Green         | ![#008000](https://via.placeholder.com/10/008000?text=+) `#008000` | Yes (Met up and did Float)              | Y           |
-| Red           | ![#FF0000](https://via.placeholder.com/10/FF0000?text=+) `#FF0000` | No (Met up, but did not Float)          | N           |
-| Orange        | ![#FFA500](https://via.placeholder.com/10/FFA500?text=+) `#FFA500` | Skipped (Skipped the event altogether)  | S           |
-
+| Green         | ![#008000](https://placehold.co/2x2/008000/008000) `#008000` | Yes (Met up and did Float)              | Y           |
+| Red           | ![#FF0000](https://placehold.co/2x2/FF0000/FF0000) `#FF0000` | No (Met up, but did not Float)          | N           |
+| Orange        | ![#FFA500](https://placehold.co/2x2/FFA500/FFA500) `#FFA500` | Skipped (Skipped the event altogether)  | S           |
 
 > [!NOTE]
 > The closest river gage to our float location is the [Susquehanna River at Meshoppen, PA](https://waterdata.usgs.gov/nwis/uv?01533400), which is the default site code in the application. 
